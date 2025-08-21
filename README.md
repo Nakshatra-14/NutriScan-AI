@@ -20,8 +20,6 @@ Pick your platform below and get started in just one click 👇
 
 ---
 
----
-
 <div align="center">
 
 ### 📱 Android App  
@@ -37,8 +35,8 @@ Pick your platform below and get started in just one click 👇
 
 ### 🌐 Web App  
 
-[![Launch Web App](https://img.shields.io/badge/🚀_Launch-Web_App-blue?style=for-the-badge&logo=google-chrome)](https://your-hosted-website-link.com)  
-[![View Website Code](https://img.shields.io/badge/💻_View-Website_Code-lightgrey?style=for-the-badge&logo=react)](Website/)  
+[![Launch Web App](https://img.shields.io/badge/🚀_Launch-Web_App-blue?style=for-the-badge&logo=google-chrome)](https://nutri-scan-ai-azure.vercel.app/)  
+[![View Website Code](https://img.shields.io/badge/💻_View-Website_Code-lightgrey?style=for-the-badge&logo=react)](Website/my-app)  
 
 </div>
 
@@ -176,9 +174,8 @@ Built with **Kotlin + Jetpack Compose**
 ### 💻 Website  
 Responsive **React + Tailwind** site  
 - Project Info Hub  
-- Portal for **Care Mode** feature  
-
-
+- Portal for **Care Mode** feature
+- 
 ---
 
 ## 📂 Project Structure  

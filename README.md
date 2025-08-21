@@ -1,8 +1,15 @@
 <!-- # 🍏 NutriScan AI — Your Intelligent Food Evaluator   -->
 
+<div align="center">
+
 ![NutriScan Logo](https://i.ibb.co/20MrCcjz/Nutri-Scan-Banner.png)
 
-![Hackathon Badge](https://img.shields.io/badge/Hackathon-Ready-brightgreen)  ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg) ![Version](https://img.shields.io/badge/Version-1.0.0-orange)  
+![Hackathon Badge](https://img.shields.io/badge/Hackathon-Ready-brightgreen) 
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg) 
+![Version](https://img.shields.io/badge/Version-1.0.0-orange)
+
+</div>
+
 
 ---
 
@@ -13,17 +20,30 @@ Pick your platform below and get started in just one click 👇
 
 ---
 
+---
+
+<div align="center">
+
 ### 📱 Android App  
 
 [![Download APK](https://img.shields.io/badge/⬇️_Download-APK-success?style=for-the-badge&logo=android)](app/build/outputs/apk/debug/NutriScan.apk)  
 [![View App Code](https://img.shields.io/badge/💻_View-App_Code-brightgreen?style=for-the-badge&logo=kotlin)](app/)  
 
+</div>
+
 ---
+
+<div align="center">
 
 ### 🌐 Web App  
 
 [![Launch Web App](https://img.shields.io/badge/🚀_Launch-Web_App-blue?style=for-the-badge&logo=google-chrome)](https://your-hosted-website-link.com)  
 [![View Website Code](https://img.shields.io/badge/💻_View-Website_Code-lightgrey?style=for-the-badge&logo=react)](Website/)  
+
+</div>
+
+---
+
 
 ---
 

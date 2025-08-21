@@ -44,70 +44,114 @@ Pick your platform below and get started in just one click 👇
 
 ---
 
-
----
-
 ✨ **Pro Tip:**  
 - Install the APK on your Android device to try the app.  
 - Use the hosted **Web App** link for instant access in your browser.  
 
-
 ---
 
-## 🌍 Overview  
+<div align="center">
+
+# 🌍 NutriScan Overview 
+ 
+*AI + ML Powered Nutrition Intelligence*
+</div>
 
 NutriScan AI is not just a nutrition scanner — it’s a **full-stack AI/ML system** that transforms raw food data into **actionable health intelligence**.  
 
-At its core, NutriScan runs on a **custom-built backend AI engine** that:  
-- 🧮 **Computes health metrics** like Calories, Glycemic Index (GI), NutriScore, and EcoScore using real formulas + probabilistic models  
-- 🧠 **Evaluates risk patterns** (e.g., high sugar + high carb → diabetes warning)  
-- 📊 **Generates explainable outputs** with rule-based + ML-driven scoring  
-- 🔄 **Adapts dynamically** to user profiles (age, diabetes status, preferences)  
+---
 
-📷 **Scan any packaged food → our AI instantly delivers:**  
-- **Nutrient breakdown** (protein, carbs, fats, sugars, fiber)  
-- **GI, NutriScore, EcoScore** (calculated in real-time)  
-- A **health label**: ✅ Good / ⚠️ Moderate / ❌ Bad  
-- **5–6 personalized tips** explained in plain language  
+## 🧠 The AI/ML Brain Behind NutriScan  
+
+NutriScan is powered by a **next-gen hybrid AI engine** — blending **rule-based formulas, probabilistic models, and machine learning** into a single intelligent pipeline.  
+
+- ⚡ **Real-Time Computation** → Instantly calculates Calories, GI, NutriScore, and EcoScore using transparent formulas + statistical sampling.  
+- 🧠 **Adaptive ML Layer** → Learns from user profiles (age, diabetes status, diet type) and refines scoring dynamically.  
+- 🔍 **Risk Pattern Detector** → Flags high-risk combos (e.g., sugar + carbs → ⚠️ diabetes warning).  
+- 🗣️ **Dynamic Narration** → Generates **multilingual insights + natural TTS** (English, Hindi, Bengali), so results feel human, not robotic.  
+- 📊 **Explainable AI** → Every recommendation comes with a **clear “why”**, bridging trust between raw numbers and health advice.  
+
+✅ **End result:** A scanner that doesn’t just show numbers — it **thinks, adapts, and explains** like a real nutrition expert.  
+
 
 ---
 
-### 🧠 The AI/ML Brain Behind NutriScan  
-Unlike static apps, NutriScan’s intelligence comes - from a **hybrid AI approach**:  
-- Rule-based AI → transparent formulas for calories, NutriScore, EcoScore
-- Probabilistic AI → Glycemic Index via normal distribution modeling
-- Profile-based ML logic → adapts recommendations for diabetes, age, or dietary needs
-- Explainable AI module → every recommendation comes with a clear why
----
+<div align="center">
 
-## 🚀 What It Does  
+# 🚀 What It Does  
 
-✔️ Converts raw nutrition facts → **meaningful recommendations** in real time  
-✔️ Flags **diabetes-related risks** with instant alerts  
+</div>
+
+✔️ Converts **raw nutrition facts → meaningful recommendations** in real time  
+✔️ Flags **diabetes risks** with instant alerts  
 ✔️ Provides **multilingual text + natural TTS** (English, Hindi, Bengali)  
 ✔️ Explains the **why** via an **Education Module**  
-✔️ Empowers caregivers with **Care Mode** (remote monitoring + alerts)  
+✔️ Enables **Care Mode** (remote monitoring + alerts for caregivers)  
 
 ---
 
-## ✨ Key Features  
 
-- 📊 **Instant Nutrient Analysis** – Full breakdown + visual scorecards (GI, NutriScore, EcoScore)  
-- 🟢 **Simple Health Labels** – “Good / OK / Bad” for quick supermarket decisions  
-- 💡 **Tailored Dietary Tips** – 5–6 personalized, practical suggestions per scan  
-- 🔊 **Multimodal Output** – Text + TTS in **English, Hindi, Bengali**  
-- 🔎 **Explainable AI** – Transparent logic + bite-sized nutrition lessons  
-- 👨‍👩‍👧 **Care Mode** – Share history & alerts with caregivers  
-- 🧑‍⚕️ **Personalized Profiles** – Configure age, diabetes status, diet preferences  
+<div align="center">
+
+# 👥 Who Benefits?  
+
+</div>
+
+- 🩸 **People with Diabetes** → Instant sugar/carbs alerts  
+- 👨‍👩‍👧 **Caregivers & Parents** → Remote oversight & safety alerts  
+- 🛒 **Everyday Shoppers** → Healthier, faster supermarket decisions  
+- 📚 **Educators** → Interactive nutrition learning tool  
 
 ---
 
-## 👥 Who Benefits?  
+<div align="center">
 
-- **People with Diabetes** 🩸 → Quick sugar/carbs alerts  
-- **Caregivers & Parents** 👨‍👩‍👧 → Remote oversight & instant alerts  
-- **Everyday Shoppers** 🛒 → Healthier, faster supermarket decisions  
-- **Educators** 📚 → Interactive nutrition learning tool  
+# 🧮 Core Formulas Behind NutriScan
+
+</div>
+
+### 🔥 Calories Calculation
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?\bg{transparent}\color{white}\text{Calories}=(\text{Protein}\times4)+(\text{Carbohydrates}\times4)+(\text{Fat}\times9)" alt="Calories Formula"/>
+</p>
+
+---
+
+### 🥗 Nutri-Score
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?\bg{transparent}\color{white}\text{NutriScore}=(\text{EnergyPts}+\text{SugarPts}+\text{FatPts})-(\text{FiberPts}+\text{ProteinPts})" alt="Nutri-Score Overall"/>
+</p>
+
+**Where:**
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?\bg{transparent}\color{white}\text{EnergyPts}=\min(10,\max(0,\lfloor\frac{\text{Calories}}{335}\rfloor))" alt="Energy Points"/>
+</p>
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?\bg{transparent}\color{white}\text{SugarPts}=\min(10,\max(0,\lfloor\frac{\text{Sugar}}{4.5}\rfloor))" alt="Sugar Points"/>
+</p>
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?\bg{transparent}\color{white}\text{FatPts}=\min(10,\max(0,\lfloor\frac{\text{Fat}}{1}\rfloor))" alt="Fat Points"/>
+</p>
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?\bg{transparent}\color{white}\text{FiberPts}=\min(5,\max(0,\lfloor\frac{\text{Fiber}}{0.9}\rfloor))" alt="Fiber Points"/>
+</p>
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?\bg{transparent}\color{white}\text{ProteinPts}=\min(5,\max(0,\lfloor\frac{\text{Protein}}{1.6}\rfloor))" alt="Protein Points"/>
+</p>
+
+---
+
+### 🍬 Glycemic Index (GI)
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?\bg{transparent}\color{white}GI=\min\!\Big(100,\max\!\big(0,\mathcal{N}(55,15)+\frac{\text{Sugar}}{10}+\frac{\text{Carbohydrates}}{50}\big)\Big)" alt="Glycemic Index"/>
+</p>
+
+---
+
+### 🌱 Eco-Score
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?\bg{transparent}\color{white}EcoScore=\min\!\Big(100,\max\!\big(0,\mathcal{N}(50,20)+\frac{\text{Protein}}{5}\big)\Big)" alt="Eco-Score"/>
+</p>
 
 ---
 

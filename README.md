@@ -20,8 +20,6 @@ Pick your platform below and get started in just one click 👇
 
 ---
 
----
-
 <div align="center">
 
 ### 📱 Android App  
@@ -41,9 +39,6 @@ Pick your platform below and get started in just one click 👇
 [![View Website Code](https://img.shields.io/badge/💻_View-Website_Code-lightgrey?style=for-the-badge&logo=react)](Website/my-app)  
 
 </div>
-
----
-
 
 ---
 
@@ -132,9 +127,8 @@ Built with **Kotlin + Jetpack Compose**
 ### 💻 Website  
 Responsive **React + Tailwind** site  
 - Project Info Hub  
-- Portal for **Care Mode** feature  
-
-
+- Portal for **Care Mode** feature
+- 
 ---
 
 ## 📂 Project Structure  

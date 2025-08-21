@@ -1,6 +1,6 @@
-# 🍏 NutriScan AI — Your Intelligent Food Evaluator  
+<!-- # <img src="https://i.ibb.co/twS76M3K/logo.png" width="65"> NutriScan AI — Your Intelligent Nutrition at Your Fingertips  -->
 
-![NutriScan Logo](assets/logo.png) <!-- Replace with actual logo path -->
+![NutriScan Logo](https://i.ibb.co/20MrCcjz/Nutri-Scan-Banner.png)
 
 ![Hackathon Badge](https://img.shields.io/badge/Hackathon-Ready-brightgreen)  ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg) ![Version](https://img.shields.io/badge/Version-1.0.0-orange)  
 

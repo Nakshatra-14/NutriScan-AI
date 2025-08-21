@@ -95,10 +95,28 @@ NutriScan is powered by a **next-gen hybrid AI engine** — blending **rule-base
 
 </div>
 
-- 🩸 **People with Diabetes** → Instant sugar/carbs alerts  
-- 👨‍👩‍👧 **Caregivers & Parents** → Remote oversight & safety alerts  
-- 🛒 **Everyday Shoppers** → Healthier, faster supermarket decisions  
-- 📚 **Educators** → Interactive nutrition learning tool  
+- 🩸 **People with Diabetes**  
+  → AI-driven **instant sugar & carb warnings**, reducing risk in everyday eating decisions.  
+
+- 👨‍👩‍👧 **Caregivers & Parents**  
+  → With **Care Mode**, scans sync to the cloud AI server → enabling **remote monitoring, alerts, and peace of mind**.  
+
+- 🛒 **Everyday Shoppers**  
+  → Supermarket choices made smarter: **scan → AI evaluates → instant health verdict**.  
+
+- 📚 **Educators & Researchers**  
+  → The **web dashboard** visualizes how the **AI/ML model + database** compute Glycemic Index, NutriScore & insights → turning raw data into a **living learning tool**.  
+
+---
+
+⚡ **One Unified Brain**:  
+Both **App** & **Website** connect to the **same AI-powered API server**. Every scan → processed in real time → returned as **personalized, context-aware nutrition guidance**.  
+
+<div align="center">
+
+📲 **User Scan** → 🌐 **API Server + AI/ML Model** → 🤖 **Smart Feedback**  
+
+</div>
 
 ---
 
@@ -181,6 +199,15 @@ A **high-performance React dashboard** that mirrors the mobile app while showcas
 
 ---
 
+
+## 🖼️ Screenshots & Demos  
+
+📱 **App Screenshots**: (Coming soon)  
+🌐 **Website Preview**: (Coming soon)  
+<centre> [![View App Code](https://img.shields.io/badge/View-DEMO-brightgreen?style=for-the-badge&logo=youtube)](app/) (Comming Soon) <!-- Replace with real link -->  
+
+---
+
 ## 📂 Project Structure  
 <!-- ```
 NutriScan/
@@ -202,18 +229,30 @@ NutriScan/
 Work On Progress (Comming Soon...)
 ```
 ---
+## 👨‍💻 Our Team  
 
-## 🖼️ Screenshots & Demos  
+We are a **5-member interdisciplinary team** combining AI, data, and design expertise to build **NutriScan** – an AI-powered nutrition intelligence system.  
 
-📱 **App Screenshots**: (Coming soon)  
-🌐 **Website Preview**: (Coming soon)  
-<centre> [![View App Code](https://img.shields.io/badge/View-DEMO-brightgreen?style=for-the-badge&logo=youtube)](app/) (Comming Soon) <!-- Replace with real link -->  
+- 🚀 **Nakshatra Naskar** – *Project Lead & Full-Stack AI/ML Developer*  
+  → Architected the **Android App**, built the **Flask backend**, and developed the **AI/ML engine** powering NutriScan.  
+
+- 🎨 **Ananya Laha** – *UI/UX Designer*  
+  → Designed sleek, intuitive user flows and interfaces for both **mobile & web**.  
+
+- 📊 **Kunal Dutta** – *Data Scientist*  
+  → Processed nutrition datasets, tuned probabilistic models, and optimized health scoring logic.  
+
+- 💻 **Ankit Paul** – *Frontend Developer*  
+  → Built the **React-based web app**, integrating real-time AI insights & visualizations.  
+
+- 🗄️ **Pratyay Roy** – *Data Engineer*  
+  → Designed data pipelines, ensured smooth API ↔ database integration and data sharing.  
 
 ---
 
-## 👨‍💻 Our Team<br>
-Nakshatra Naskar – Project Lead & AI/ML Developer<br>
-(Add teammates & roles here)
+⚡ Together, we’ve fused **AI/ML, modern app development, and data engineering** into a single powerful system that turns food barcodes into **real-time, explainable, and personalized health intelligence**.
+
+---
 
 ## 📜 License
 This project is licensed under the MIT License – see LICENSE

@@ -182,7 +182,7 @@ A **high-performance React dashboard** that mirrors the mobile app while showcas
 ---
 
 ## 📂 Project Structure  
-```
+<!-- ```
 NutriScan/
 │
 ├── app/ # Android App Source Code
@@ -197,6 +197,9 @@ NutriScan/
 ├── public/
 ├── src/
 └── index.html
+``` -->
+```
+Work On Progress (Comming Soon...)
 ```
 ---
 
@@ -204,7 +207,7 @@ NutriScan/
 
 📱 **App Screenshots**: (Coming soon)  
 🌐 **Website Preview**: (Coming soon)  
-<centre> [![View App Code](https://img.shields.io/badge/View-DEMO-brightgreen?style=for-the-badge&logo=youtube)](app/) <!-- Replace with real link -->  
+<centre> [![View App Code](https://img.shields.io/badge/View-DEMO-brightgreen?style=for-the-badge&logo=youtube)](app/) (Comming Soon) <!-- Replace with real link -->  
 
 ---
 

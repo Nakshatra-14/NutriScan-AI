@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* Thin white stripe (10%) */
+.tri-3-thin {
+  background-image: linear-gradient(
+    90deg,
+    #FF6F00 0%,
+    #FF6F00 45%, 
+    #FFFFFF 45%,
+    #FFFFFF 55%,
+    #006400 55%,
+    #006400 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 900;
+}

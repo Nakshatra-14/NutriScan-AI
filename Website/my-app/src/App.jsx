@@ -100,12 +100,12 @@ Tips: Prefer <10g sugar/100g • Add yogurt/nuts for protein • Good fiber for 
         className="px-6 md:px-10 py-12 md:py-16 grid md:grid-cols-3 gap-6 relative z-10"
       >
         {[
-          ["⚡ Instant Analysis", "Protein, carbs, fats, sugars, fiber, GI, NutriScore, EcoScore."],
-          ["🩺 Risk Signals", "Flags high sugar/carbs for diabetes-friendly decisions."],
-          ["🔊 Multilingual TTS", "English • Hindi • Bengali for wider accessibility."],
-          ["🧠 Explainable", "Shows why each tip was generated (Education Mode)."],
-          ["👨‍👩‍👧 Care Mode", "Share scans, alerts for parents/caregivers."],
-          ["🎚️ Personalization", "Age, conditions, and dietary preferences aware."],
+          [" Instant Analysis", "Protein, carbs, fats, sugars, fiber, GI, NutriScore, EcoScore."],
+          [" Risk Signals", "Flags high sugar/carbs for diabetes-friendly decisions."],
+          [" Multilingual TTS", "English • Hindi • Bengali for wider accessibility."],
+          [" Explainable", "Shows why each tip was generated (Education Mode)."],
+          [" Care Mode", "Share scans, alerts for parents/caregivers."],
+          ["🎚 Personalization", "Age, conditions, and dietary preferences aware."],
         ].map(([t, d], i) => (
           <motion.div
             key={i}

@@ -6,24 +6,58 @@
 
 ---
 
-## 🔥 One-Liner  
-**An AI- and ML-powered food evaluation product that transforms a simple barcode scan into instant, trustworthy, and actionable nutrition guidance.**
+## 🚀 Getting Started  
+
+This project contains both an **Android Application** and a **Web Application**.  
+Pick your platform below and get started in just one click 👇  
+
+---
+
+### 📱 Android App  
+
+[![Download APK](https://img.shields.io/badge/⬇️_Download-APK-success?style=for-the-badge&logo=android)](app/build/outputs/apk/debug/NutriScan.apk)  
+[![View App Code](https://img.shields.io/badge/💻_View-App_Code-brightgreen?style=for-the-badge&logo=kotlin)](app/)  
+
+---
+
+### 🌐 Web App  
+
+[![Launch Web App](https://img.shields.io/badge/🚀_Launch-Web_App-blue?style=for-the-badge&logo=google-chrome)](https://your-hosted-website-link.com)  
+[![View Website Code](https://img.shields.io/badge/💻_View-Website_Code-lightgrey?style=for-the-badge&logo=react)](Website/)  
+
+---
+
+✨ **Pro Tip:**  
+- Install the APK on your Android device to try the app.  
+- Use the hosted **Web App** link for instant access in your browser.  
+
 
 ---
 
 ## 🌍 Overview  
-NutriScan AI bridges the gap between **raw nutrition facts** and **real-world action**.  
 
-📷 Simply scan any packaged food → instantly get:  
-- A **nutrient breakdown** (protein, carbs, fats, sugars, fiber)  
-- Computed **Glycemic Index (GI)**, **NutriScore**, and **EcoScore**  
-- A clear **health label**: ✅ *Good* / ⚠️ *OK* / ❌ *Bad*  
-- **5–6 tailored tips** based on your age & health status  
+NutriScan AI is not just a nutrition scanner — it’s a **full-stack AI/ML system** that transforms raw food data into **actionable health intelligence**.  
 
-💡 Instead of showing confusing numbers, NutriScan **interprets them** — in plain language, in multiple languages, and with transparent AI logic.  
+At its core, NutriScan runs on a **custom-built backend AI engine** that:  
+- 🧮 **Computes health metrics** like Calories, Glycemic Index (GI), NutriScore, and EcoScore using real formulas + probabilistic models  
+- 🧠 **Evaluates risk patterns** (e.g., high sugar + high carb → diabetes warning)  
+- 📊 **Generates explainable outputs** with rule-based + ML-driven scoring  
+- 🔄 **Adapts dynamically** to user profiles (age, diabetes status, preferences)  
 
-👉 The result? **Smarter, safer, healthier food choices — right when you need them.**  
+📷 **Scan any packaged food → our AI instantly delivers:**  
+- **Nutrient breakdown** (protein, carbs, fats, sugars, fiber)  
+- **GI, NutriScore, EcoScore** (calculated in real-time)  
+- A **health label**: ✅ Good / ⚠️ Moderate / ❌ Bad  
+- **5–6 personalized tips** explained in plain language  
 
+---
+
+### 🧠 The AI/ML Brain Behind NutriScan  
+Unlike static apps, NutriScan’s intelligence comes - from a **hybrid AI approach**:  
+- Rule-based AI → transparent formulas for calories, NutriScore, EcoScore
+- Probabilistic AI → Glycemic Index via normal distribution modeling
+- Profile-based ML logic → adapts recommendations for diabetes, age, or dietary needs
+- Explainable AI module → every recommendation comes with a clear why
 ---
 
 ## 🚀 What It Does  
@@ -57,6 +91,32 @@ NutriScan AI bridges the gap between **raw nutrition facts** and **real-world ac
 
 ---
 
+## 🛠️ Tech Stack  
+
+**Frontend**: React, Vite, Tailwind CSS  
+**Backend**: Python, Flask (AI/ML model)  
+**Mobile**: Kotlin, Jetpack Compose, CameraX, ML Kit  
+**Database**: (Add here if using)  
+**APIs**: Local API  
+
+---
+
+## 📱 App & Website  
+
+### 📲 Android App  
+Built with **Kotlin + Jetpack Compose**  
+- Barcode Scanner (CameraX + ML Kit)  
+- Detailed Results Screen  
+- Profiles + Learning Center  
+
+### 💻 Website  
+Responsive **React + Tailwind** site  
+- Project Info Hub  
+- Portal for **Care Mode** feature  
+
+
+---
+
 ## 📂 Project Structure  
 ```
 NutriScan/
@@ -74,48 +134,15 @@ NutriScan/
 ├── src/
 └── index.html
 ```
-
----
-
-## 📱 App & Website  
-
-### 📲 Android App  
-Built with **Kotlin + Jetpack Compose**  
-- Barcode Scanner (CameraX + ML Kit)  
-- Detailed Results Screen  
-- Profiles + Learning Center  
-
-### 💻 Website  
-Responsive **React + Tailwind** site  
-- Project Info Hub  
-- Portal for **Care Mode** feature  
-
 ---
 
 ## 🖼️ Screenshots & Demos  
 
 📱 **App Screenshots**: (Coming soon)  
 🌐 **Website Preview**: (Coming soon)  
-🎥 **Demo Video**: [Watch Here](https://youtube.com) <!-- Replace with real link -->  
+<centre> [![View App Code](https://img.shields.io/badge/View-DEMO-brightgreen?style=for-the-badge&logo=youtube)](app/) <!-- Replace with real link -->  
 
 ---
-
-## 🛠️ Tech Stack  
-
-**Frontend**: React, Vite, Tailwind CSS  
-**Backend**: Python, Flask (AI/ML model)  
-**Mobile**: Kotlin, Jetpack Compose, CameraX, ML Kit  
-**Database**: (Add here if using)  
-**APIs**: Local API  
-
----
-
-## 🔘 Quick Link
-
-📥 Download APK<br>
-🌐 Open Website<br>
-📂 App Source Code<br>
-💻 Website Source Code<br>
 
 ## 👨‍💻 Our Team<br>
 Nakshatra Naskar – Project Lead & AI/ML Developer<br>

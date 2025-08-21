@@ -151,31 +151,34 @@ NutriScan is powered by a **next-gen hybrid AI engine** — blending **rule-base
   <img src="https://latex.codecogs.com/svg.image?\bg{transparent}\color{white}EcoScore=\min\!\Big(100,\max\!\big(0,\mathcal{N}(50,20)+\frac{\text{Protein}}{5}\big)\Big)" alt="Eco-Score"/>
 </p>
 
----
-
 ## 🛠️ Tech Stack  
 
-**Frontend**: React, Vite, Tailwind CSS  
-**Backend**: Python, Flask (AI/ML model)  
-**Mobile**: Kotlin, Jetpack Compose, CameraX, ML Kit  
-**Database**: (Add here if using)  
-**APIs**: Local API  
+**Frontend (Web)**: React ⚡ Vite ⚡ Tailwind CSS (responsive, blazing fast)  
+**Backend**: Python + Flask 🚀 (serving AI/ML engine & APIs)  
+**Mobile**: Kotlin + Jetpack Compose 📱 (native, modern UI)  
+**AI/ML Engine**: Custom hybrid model (ML layer)  
+**Database**: (Working on)  
+**APIs**: Unified REST API (serving both App & Web)  
 
 ---
 
 ## 📱 App & Website  
 
 ### 📲 Android App  
-Built with **Kotlin + Jetpack Compose**  
-- Barcode Scanner (CameraX + ML Kit)  
-- Detailed Results Screen  
-- Profiles + Learning Center  
+A **next-gen mobile client** built with **Kotlin + Jetpack Compose**  
+- 🔍 **Smart Barcode Scanner** → CameraX + ML Kit for instant recognition  
+- 📊 **Interactive Results Screen** → Nutrient breakdown + AI insights  
+- 🧑‍⚕️ **Personalized Profiles** → Tailored scoring based on user health  
+- 🎓 **Learning Hub** → Educates users with adaptive tips  
 
 ### 💻 Website  
-Responsive **React + Tailwind** site  
-- Project Info Hub  
-- Portal for **Care Mode** feature
-- 
+A **high-performance React dashboard** that mirrors the mobile app while showcasing the system’s internals  
+- 🖥️ **Visualization Layer** → Displays how AI/ML computes GI, NutriScore, EcoScore  
+- 🌐 **Info + Demo Hub** → Judges & users can explore the project without APK install  
+- 🤝 **Care Mode Portal** → Cross-device sharing of food scans & insights  
+
+⚡ **Both App & Web share the same AI/ML backend, database, and APIs** → ensuring **consistency, reliability, and real-time sync**. The web doubles as a **showcase dashboard**, while the mobile app delivers **daily usability**.
+
 ---
 
 ## 📂 Project Structure  

@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![NutriScan Logo](https:/i.ibb.co/fzn1bwcV/Nutri-Scan-Banner.png)
+![NutriScan Logo](https://i.ibb.co/fzn1bwcV/Nutri-Scan-Banner.png)
 
 ![Hackathon Badge](https://img.shields.io/badge/Hackathon-Ready-brightgreen) 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg) 

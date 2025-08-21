@@ -1,94 +1,126 @@
-#  NutriScan AI — AI-powered Food Health Evaluator 
+# 🍏 NutriScan AI — Your Intelligent Food Evaluator  
 
-[![Hackathon Ready](https://img.shields.io/badge/Hackathon-ready-blue.svg)](#)
-[![License MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)](#)
+![NutriScan Logo](assets/logo.png) <!-- Replace with actual logo path -->
 
-**Prototype**: Machine Learning-based food suitability tracker & guardian Care Mode app.
+![Hackathon Badge](https://img.shields.io/badge/Hackathon-Ready-brightgreen)  ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg) ![Version](https://img.shields.io/badge/Version-1.0.0-orange)  
 
 ---
 
-##  Quick Links
-
-| Action | Button |
-|--------|--------|
-| Download APK | [![Download APK](https://img.shields.io/badge/APK-green?logo=android)](app/app-release.apk) |
-| Launch Web App | [![Open Website](https://img.shields.io/badge/Web_App-blue?logo=chrome)](website/index.html) |
-| View App Code | [![App Code](https://img.shields.io/badge/View_App–Directory-brightgreen)](app/) |
-| View Website Code | [![Website Code](https://img.shields.io/badge/View_Website–Directory-lightgrey)](website/) |
+## 🔥 One-Liner  
+**An AI- and ML-powered food evaluation product that transforms a simple barcode scan into instant, trustworthy, and actionable nutrition guidance.**
 
 ---
 
-##  Overview
+## 🌍 Overview  
+NutriScan AI bridges the gap between **raw nutrition facts** and **real-world action**.  
 
-**NutriScan AI** is an AI-powered food evaluator that uses machine learning to analyze scanned food based on nutrient content, age group, and health status (like diabetes risk), delivering clear feedback. It generates a label ("Good", "OK", or "Bad") and 5–6 easy-to-read sentences (e.g., **"Sugar is high — may be risky if you're diabetic"**), with multilingual text and voice output (English, Hindi, Bengali).
+📷 Simply scan any packaged food → instantly get:  
+- A **nutrient breakdown** (protein, carbs, fats, sugars, fiber)  
+- Computed **Glycemic Index (GI)**, **NutriScore**, and **EcoScore**  
+- A clear **health label**: ✅ *Good* / ⚠️ *OK* / ❌ *Bad*  
+- **5–6 tailored tips** based on your age & health status  
 
-Your guardian can activate **Care Mode** to monitor in real time what you're scanning and instantly view health suitability and alerts on a separate app or web panel.
+💡 Instead of showing confusing numbers, NutriScan **interprets them** — in plain language, in multiple languages, and with transparent AI logic.  
+
+👉 The result? **Smarter, safer, healthier food choices — right when you need them.**  
 
 ---
 
-## 📂 Project Structure
-```plaintext
+## 🚀 What It Does  
+
+✔️ Converts raw nutrition facts → **meaningful recommendations** in real time  
+✔️ Flags **diabetes-related risks** with instant alerts  
+✔️ Provides **multilingual text + natural TTS** (English, Hindi, Bengali)  
+✔️ Explains the **why** via an **Education Module**  
+✔️ Empowers caregivers with **Care Mode** (remote monitoring + alerts)  
+
+---
+
+## ✨ Key Features  
+
+- 📊 **Instant Nutrient Analysis** – Full breakdown + visual scorecards (GI, NutriScore, EcoScore)  
+- 🟢 **Simple Health Labels** – “Good / OK / Bad” for quick supermarket decisions  
+- 💡 **Tailored Dietary Tips** – 5–6 personalized, practical suggestions per scan  
+- 🔊 **Multimodal Output** – Text + TTS in **English, Hindi, Bengali**  
+- 🔎 **Explainable AI** – Transparent logic + bite-sized nutrition lessons  
+- 👨‍👩‍👧 **Care Mode** – Share history & alerts with caregivers  
+- 🧑‍⚕️ **Personalized Profiles** – Configure age, diabetes status, diet preferences  
+
+---
+
+## 👥 Who Benefits?  
+
+- **People with Diabetes** 🩸 → Quick sugar/carbs alerts  
+- **Caregivers & Parents** 👨‍👩‍👧 → Remote oversight & instant alerts  
+- **Everyday Shoppers** 🛒 → Healthier, faster supermarket decisions  
+- **Educators** 📚 → Interactive nutrition learning tool  
+
+---
+
+## 📂 Project Structure  
+```
 NutriScan/
 │
-├── app/                # Android app source code
-│   ├── nutriscan.apk   # One-click install APK
-│   └── src/            # App source files
+├── app/ # Android App Source Code
+│ └── build/
+│ └── outputs/
+│ └── apk/
+│ └── debug/
+│ └── NutriScan.apk # Installable APK
 │
-├── website/            # Website frontend
-│   ├── index.html
-│   └── assets/
-│
-└── README.md           # Project documentation
+└── Website/ # Website Source Code
+└── my-app/
+├── public/
+├── src/
+└── index.html
 ```
 
-| Directory | Purpose |
-|-----------|---------|
-| `app/` | Contains mobile app files, including the signed APK and app source code. |
-| `website/` | Contains the frontend web dashboard for Care Mode and education hub. |
+---
+
+## 📱 App & Website  
+
+### 📲 Android App  
+Built with **Kotlin + Jetpack Compose**  
+- Barcode Scanner (CameraX + ML Kit)  
+- Detailed Results Screen  
+- Profiles + Learning Center  
+
+### 💻 Website  
+Responsive **React + Tailwind** site  
+- Project Info Hub  
+- Portal for **Care Mode** feature  
 
 ---
 
-##  Demo Preview
+## 🖼️ Screenshots & Demos  
 
-*(Insert image below showcasing app UI or web dashboard in action)*
-
-![App Demo](docs/demo-screenshot.png)
-
----
-
-##  Installation & Usage
-
-###  Mobile App (Android)
-1. **Click the “Download APK” button above** to download.
-2. Install `app-release.apk` on your Android device.
-3. Open the app, scan a product, and receive real-time AI feedback.
-
-###  Web Dashboard (Care Mode)
-1. Click **“Launch Web App”**.
-2. View real-time scans from mobile users in your network and their AI-driven food assessments.
+📱 **App Screenshots**: (Coming soon)  
+🌐 **Website Preview**: (Coming soon)  
+🎥 **Demo Video**: [Watch Here](https://youtube.com) <!-- Replace with real link -->  
 
 ---
 
-##  Core Features
+## 🛠️ Tech Stack  
 
-- **Machine Learning Suitability Assessment**  
-  Classifies a scanned food item as **Good / OK / Bad**.
+**Frontend**: React, Vite, Tailwind CSS  
+**Backend**: Python, Flask (AI/ML model)  
+**Mobile**: Kotlin, Jetpack Compose, CameraX, ML Kit  
+**Database**: (Add here if using)  
+**APIs**: Local API  
 
-- **Nutrient Insight Sentences**  
-  Personalized feedback (e.g., balanced carbs, high sugar, low fiber).
+---
 
-- **Diabetes Risk Identification**  
-  Alerts for high-sugar or high-carb items for diabetic users.
+## 🔘 Quick Link
 
-- **Multilingual & Accessible**  
-  Outputs available in English, Hindi, Bengali — with TTS support.
+📥 Download APK<br>
+🌐 Open Website<br>
+📂 App Source Code<br>
+💻 Website Source Code<br>
 
-- **Health & Sustainability Scores**  
-  Estimates Glycemic Index (GI), NutriScore, and EcoScore for quick insights.
+## 👨‍💻 Our Team<br>
+Nakshatra Naskar – Project Lead & AI/ML Developer<br>
+(Add teammates & roles here)
 
-- **Care Mode**  
-  Guardians can monitor real-time scan data via mobile or web.
-
-- **Education Module**  
-  Users learn how scores (GI, NutriScore, EcoScore) are calculated and used.
+## 📜 License
+This project is licensed under the MIT License – see LICENSE
+ for details.

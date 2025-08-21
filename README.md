@@ -1,4 +1,4 @@
-<!-- # <img src="https://i.ibb.co/twS76M3K/logo.png" width="65"> NutriScan AI — Your Intelligent Nutrition at Your Fingertips  -->
+# 🍏 NutriScan AI — Your Intelligent Food Evaluator  
 
 ![NutriScan Logo](https://i.ibb.co/20MrCcjz/Nutri-Scan-Banner.png)
 

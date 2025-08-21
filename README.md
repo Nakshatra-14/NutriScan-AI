@@ -1,4 +1,4 @@
-# 🍏 NutriScan AI — Your Intelligent Food Evaluator  
+<!-- # 🍏 NutriScan AI — Your Intelligent Food Evaluator   -->
 
 ![NutriScan Logo](https://i.ibb.co/20MrCcjz/Nutri-Scan-Banner.png)
 

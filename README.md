@@ -24,8 +24,8 @@ Pick your platform below and get started in just one click 👇
 
 ### 📱 Android App  
 
-[![Download APK](https://img.shields.io/badge/⬇️_Download-APK-success?style=for-the-badge&logo=android)](app/build/outputs/apk/debug/NutriScan.apk)  
-[![View App Code](https://img.shields.io/badge/💻_View-App_Code-brightgreen?style=for-the-badge&logo=kotlin)](app/)  
+[![Download APK](https://img.shields.io/badge/⬇️_Download-APK-success?style=for-the-badge&logo=android)](app/build/outputs/apk/debug/NutriScan.apk)  (link not added)<br>
+[![View App Code](https://img.shields.io/badge/💻_View-App_Code-brightgreen?style=for-the-badge&logo=kotlin)](App/)  (working) <br>
 
 </div>
 
@@ -35,8 +35,8 @@ Pick your platform below and get started in just one click 👇
 
 ### 🌐 Web App  
 
-[![Launch Web App](https://img.shields.io/badge/🚀_Launch-Web_App-blue?style=for-the-badge&logo=google-chrome)](https://nutri-scan-ai-azure.vercel.app/)  
-[![View Website Code](https://img.shields.io/badge/💻_View-Website_Code-lightgrey?style=for-the-badge&logo=react)](Website/my-app)  
+[![Launch Web App](https://img.shields.io/badge/🚀_Launch-Web_App-blue?style=for-the-badge&logo=google-chrome)](https://nutri-scan-ai-azure.vercel.app/)  (Working)<br>
+[![View Website Code](https://img.shields.io/badge/💻_View-Website_Code-lightgrey?style=for-the-badge&logo=react)](Website/my-app)  (Working)<br>
 
 </div>
 

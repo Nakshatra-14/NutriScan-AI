@@ -4,10 +4,11 @@
 
 ![NutriScan Logo](https://i.ibb.co/LhDjnjmG/Nutri-Scan-Banner.png)
 
-![Hackathon Badge](https://img.shields.io/badge/Hackathon-Ready-brightgreen) 
+<!-- ![Hackathon Badge](https://img.shields.io/badge/Hackathon-Ready-brightgreen) 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg) 
-![Version](https://img.shields.io/badge/Version-1.0.0-orange)
+![Version](https://img.shields.io/badge/Version-1.0.0-orange) -->
 
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00FF7F&center=true&vCenter=true&width=650&lines=Powered+by+a+proprietary+nutrition+database.;Analyzed+by+a+custom-built+AI%2FML+Engine.+%F0%9F%A7%A0;We+don't+just+show+numbers...;We+generate+dynamic%2C+sentence-based+insights.;Listen+to+your+results+with+natural+TTS.+%F0%9F%94%8A;All+on+a+clean+UI+for+Mobile+%F0%9F%93%B1+and+Web+%F0%9F%8C%90." alt="Typing SVG" /></a>
 </div>
 
 

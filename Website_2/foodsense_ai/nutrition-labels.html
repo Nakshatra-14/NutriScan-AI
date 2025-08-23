@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Nutrition Labels | NutriScan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .blog-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .blog-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .blog-content {
+            line-height: 1.8;
+        }
+        
+        .blog-section {
+            margin-bottom: 3rem;
+        }
+        
+        .blog-section h2 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .blog-section h3 {
+            margin: 1.5rem 0 1rem;
+            color: var(--text-color);
+        }
+        
+        .blog-image {
+            width: 100%;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+        }
+        
+        .label-sections {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .label-section {
+            flex: 1;
+            min-width: 200px;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .section-primary {
+            background-color: rgba(52, 152, 219, 0.1);
+            border-left: 4px solid #3498db;
+        }
+        
+        .section-secondary {
+            background-color: rgba(155, 89, 182, 0.1);
+            border-left: 4px solid #9b59b6;
+        }
+        
+        .section-tertiary {
+            background-color: rgba(46, 204, 113, 0.1);
+            border-left: 4px solid #2ecc71;
+        }
+        
+        .nutrition-label {
+            background-color: white;
+            border: 1px solid #333;
+            padding: 10px;
+            font-family: 'Arial', sans-serif;
+            max-width: 300px;
+            margin: 2rem auto;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .nutrition-label h4 {
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 0;
+            padding: 5px 0;
+            border-bottom: 10px solid #000;
+        }
+        
+        .nutrition-label .serving {
+            font-size: 0.9rem;
+            padding: 5px 0;
+            border-bottom: 1px solid #999;
+        }
+        
+        .nutrition-label .calories {
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 5px 0;
+            border-bottom: 8px solid #000;
+        }
+        
+        .nutrition-label .nutrient {
+            display: flex;
+            justify-content: space-between;
+            padding: 3px 0;
+            border-bottom: 1px solid #999;
+            font-size: 0.9rem;
+        }
+        
+        .nutrition-label .nutrient.bold {
+            font-weight: bold;
+        }
+        
+        .nutrition-label .indent {
+            padding-left: 20px;
+        }
+        
+        .nutrition-label .vitamins {
+            padding: 5px 0;
+            border-bottom: 8px solid #000;
+            font-size: 0.9rem;
+        }
+        
+        .nutrition-label .footnote {
+            font-size: 0.7rem;
+            padding-top: 5px;
+        }
+        
+        .tips-list li {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/logo.svg" alt="NutriScan Logo">
+                <span>NutriScan</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#how-it-works">How It Works</a></li>
+                <li><a href="index.html#learn" class="active">Learn</a></li>
+                <li><a href="index.html#dashboard">Dashboard</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#" class="btn btn-secondary">Log In</a>
+                <a href="#" class="btn btn-primary">Sign Up Free</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="blog-container">
+            <div class="blog-header">
+                <h1>How to Read <span class="highlight">Nutrition</span> Labels</h1>
+                <p class="blog-meta"><i class="fas fa-calendar-alt"></i> Published: August 27, 2025 | <i class="fas fa-user"></i> By Real Vision</p>
+            </div>
+            
+            <div class="blog-content">
+                <div class="blog-section">
+                    <p>Nutrition labels provide valuable information about the food we consume, but they can be confusing and overwhelming. In this comprehensive guide, we'll break down how to read and understand nutrition labels, helping you make more informed food choices for better health.</p>
+                    
+                    <img src="assets/hero-image.svg" alt="Nutrition Label Guide" class="blog-image">
+                </div>
+                
+                <div class="blog-section" id="why-read-labels">
+                    <h2>Why Reading Nutrition Labels Matters</h2>
+                    <p>Understanding nutrition labels is essential for several reasons:</p>
+                    
+                    <ul>
+                        <li><strong>Informed Choices:</strong> Labels help you compare products and choose options that align with your health goals.</li>
+                        <li><strong>Managing Health Conditions:</strong> For those with specific health concerns (diabetes, heart disease, food allergies), labels provide crucial information for managing these conditions.</li>
+                        <li><strong>Avoiding Hidden Ingredients:</strong> Labels reveal hidden sugars, sodium, and unhealthy fats that might otherwise go unnoticed.</li>
+                        <li><strong>Portion Control:</strong> Understanding serving sizes helps with portion control and calorie management.</li>
+                        <li><strong>Identifying Nutrient Content:</strong> Labels show which foods are good sources of essential nutrients like fiber, vitamins, and minerals.</li>
+                    </ul>
+                </div>
+                
+                <div class="blog-section" id="anatomy-of-label">
+                    <h2>Anatomy of a Nutrition Label</h2>
+                    <p>Nutrition labels follow a standardized format. Here's a breakdown of the key sections:</p>
+                    
+                    <div class="label-sections">
+                        <div class="label-section section-primary">
+                            <h3>Serving Information</h3>
+                            <p>This section includes:</p>
+                            <ul>
+                                <li><strong>Serving Size:</strong> The amount typically consumed in one sitting</li>
+                                <li><strong>Servings Per Container:</strong> Total number of servings in the package</li>
+                                <li><strong>Calories:</strong> Energy provided by one serving</li>
+                            </ul>
+                            <p><em>Tip: Always check the serving size first! All other information is based on this amount.</em></p>
+                        </div>
+                        
+                        <div class="label-section section-secondary">
+                            <h3>Nutrients to Limit</h3>
+                            <p>These nutrients should generally be consumed in moderation:</p>
+                            <ul>
+                                <li><strong>Total Fat:</strong> Including saturated and trans fats</li>
+                                <li><strong>Cholesterol:</strong> Important for heart health</li>
+                                <li><strong>Sodium:</strong> Linked to blood pressure issues</li>
+                                <li><strong>Added Sugars:</strong> Empty calories with minimal nutritional value</li>
+                            </ul>
+                            <p><em>Tip: Look for foods with lower percentages of these nutrients.</em></p>
+                        </div>
+                        
+                        <div class="label-section section-tertiary">
+                            <h3>Nutrients to Encourage</h3>
+                            <p>These nutrients are beneficial for health:</p>
+                            <ul>
+                                <li><strong>Dietary Fiber:</strong> Important for digestive health</li>
+                                <li><strong>Protein:</strong> Essential for muscle maintenance and growth</li>
+                                <li><strong>Vitamins and Minerals:</strong> Such as vitamin D, calcium, iron, and potassium</li>
+                            </ul>
+                            <p><em>Tip: Look for foods with higher percentages of these nutrients.</em></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-section" id="sample-label">
+                    <h2>Sample Nutrition Label</h2>
+                    <p>Here's an example of a nutrition label and how to interpret it:</p>
+                    
+                    <div class="nutrition-label">
+                        <h4>Nutrition Facts</h4>
+                        <div class="serving">
+                            <div>Serving Size 1 cup (240ml)</div>
+                            <div>Servings Per Container 4</div>
+                        </div>
+                        <div class="calories">
+                            <div>Calories 120</div>
+                        </div>
+                        <div class="nutrient bold">
+                            <div>Total Fat 2g</div>
+                            <div>3%</div>
+                        </div>
+                        <div class="nutrient indent">
+                            <div>Saturated Fat 0g</div>
+                            <div>0%</div>
+                        </div>
+                        <div class="nutrient indent">
+                            <div>Trans Fat 0g</div>
+                            <div></div>
+                        </div>
+                        <div class="nutrient bold">
+                            <div>Cholesterol 0mg</div>
+                            <div>0%</div>
+                        </div>
+                        <div class="nutrient bold">
+                            <div>Sodium 30mg</div>
+                            <div>1%</div>
+                        </div>
+                        <div class="nutrient bold">
+                            <div>Total Carbohydrate 23g</div>
+                            <div>8%</div>
+                        </div>
+                        <div class="nutrient indent">
+                            <div>Dietary Fiber 3g</div>
+                            <div>11%</div>
+                        </div>
+                        <div class="nutrient indent">
+                            <div>Total Sugars 12g</div>
+                            <div></div>
+                        </div>
+                        <div class="nutrient indent">
+                            <div>Includes 10g Added Sugars</div>
+                            <div>20%</div>
+                        </div>
+                        <div class="nutrient bold">
+                            <div>Protein 4g</div>
+                            <div></div>
+                        </div>
+                        <div class="vitamins">
+                            <div>Vitamin D 2mcg 10%</div>
+                            <div>Calcium 200mg 15%</div>
+                            <div>Iron 0.6mg 4%</div>
+                            <div>Potassium 400mg 8%</div>
+                        </div>
+                        <div class="footnote">
+                            * The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.
+                        </div>
+                    </div>
+                    
+                    <p>When reading this label, note that:</p>
+                    <ul>
+                        <li>One serving (1 cup) contains 120 calories</li>
+                        <li>It's relatively low in fat (2g) and sodium (30mg)</li>
+                        <li>It contains 3g of fiber (11% of daily value), which is good</li>
+                        <li>It has 12g of total sugar, with 10g being added sugars (20% of daily value), which is relatively high</li>
+                        <li>It provides some protein (4g) and is a good source of calcium (15% DV)</li>
+                    </ul>
+                </div>
+                
+                <div class="blog-section" id="daily-values">
+                    <h2>Understanding Percent Daily Values (%DV)</h2>
+                    <p>The percent Daily Value (%DV) shows how much a nutrient in a serving of food contributes to a total daily diet. These percentages are based on a 2,000-calorie diet.</p>
+                    
+                    <p>As a general guide:</p>
+                    <ul>
+                        <li><strong>5% DV or less</strong> is considered <strong>low</strong> for any nutrient</li>
+                        <li><strong>20% DV or more</strong> is considered <strong>high</strong> for any nutrient</li>
+                    </ul>
+                    
+                    <p>For nutrients you want to limit (like saturated fat, sodium, and added sugars), look for foods with a low %DV. For nutrients you want to consume more of (like fiber, vitamins, and minerals), look for foods with a high %DV.</p>
+                </div>
+                
+                <div class="blog-section" id="ingredient-list">
+                    <h2>Decoding the Ingredient List</h2>
+                    <p>In addition to the nutrition facts panel, the ingredient list provides valuable information:</p>
+                    
+                    <ul>
+                        <li><strong>Order matters:</strong> Ingredients are listed in descending order by weight, with the most abundant ingredient first.</li>
+                        <li><strong>Hidden sugars:</strong> Sugar can appear under many names, including high-fructose corn syrup, dextrose, maltose, and sucrose.</li>
+                        <li><strong>Whole vs. refined grains:</strong> Look for "whole" grain as the first ingredient rather than "enriched" or "refined" flour.</li>
+                        <li><strong>Additives and preservatives:</strong> Be aware of artificial colors, flavors, and preservatives if you're trying to avoid them.</li>
+                    </ul>
+                    
+                    <p>A shorter ingredient list with recognizable foods is generally a good sign of a less processed product.</p>
+                </div>
+                
+                <div class="blog-section" id="practical-tips">
+                    <h2>Practical Tips for Using Nutrition Labels</h2>
+                    <p>Here are some strategies to make the most of nutrition labels:</p>
+                    
+                    <ul class="tips-list">
+                        <li><strong>Compare similar products:</strong> Use nutrition labels to compare different brands of the same food to find the healthiest option.</li>
+                        <li><strong>Check serving sizes:</strong> Be aware that what looks like a single-serving package might actually contain multiple servings.</li>
+                        <li><strong>Look beyond health claims:</strong> Front-of-package claims like "low-fat" or "natural" can be misleading. Always check the nutrition facts panel.</li>
+                        <li><strong>Consider your personal health needs:</strong> If you have diabetes, focus on carbohydrates and sugars. If you have high blood pressure, pay attention to sodium.</li>
+                        <li><strong>Use the 5/20 rule:</strong> 5% DV or less is low, 20% DV or more is high. Apply this to decide whether the nutrient content is good or bad based on your needs.</li>
+                        <li><strong>Be aware of serving manipulations:</strong> Some manufacturers reduce serving sizes to make calorie and nutrient content appear lower.</li>
+                        <li><strong>Look for hidden sugars:</strong> Check both the added sugars on the nutrition panel and the ingredient list for sugar in its many forms.</li>
+                        <li><strong>Consider nutrient density:</strong> Focus on foods that provide substantial nutrients relative to their calorie content.</li>
+                    </ul>
+                </div>
+                
+                <div class="blog-section" id="conclusion">
+                    <h2>Conclusion</h2>
+                    <p>Reading nutrition labels is a valuable skill that empowers you to make informed food choices. By understanding what's in your food, you can better manage your health, avoid unwanted ingredients, and ensure you're getting the nutrients your body needs.</p>
+                    
+                    <p>Remember that no single nutrient defines whether a food is "good" or "bad." Instead, use nutrition labels as a tool to build a balanced diet that aligns with your personal health goals and dietary needs.</p>
+                    
+                    <p>With practice, reading nutrition labels will become second nature, allowing you to quickly assess foods and make choices that support your health and well-being.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/logo.svg" alt="NutriScan Logo">
+                <span>NutriScan</span>
+                <p>Making nutrition simple and accessible for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="#">Download App</a></li>
+                        <li><a href="#">Updates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Nutrition Guide</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Data Processing</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2025 NutriScan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

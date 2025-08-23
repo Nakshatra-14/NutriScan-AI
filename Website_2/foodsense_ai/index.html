@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriScan - Smart Nutrition Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/logo.svg" alt="NutriScan Logo">
+                <span>NutriScan</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#learn">Learn</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button id="camera-button" class="camera-button" aria-label="Try Yourself Out">
+                    <i class="fas fa-camera"></i>
+                    <span>Try Yourself Out</span>
+                </button>
+                <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#" class="btn btn-secondary">Log In</a>
+                <a href="#" class="btn btn-primary">Sign Up Free</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Understand Your Food <span class="highlight">Better</span> with AI</h1>
+                <p>NutriScan analyzes your meals, tracks nutrition, and provides personalized recommendations to help you make healthier food choices.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary btn-large">Get Started Free</a>
+                    <a href="#how-it-works" class="btn btn-text"><i class="fas fa-play-circle"></i> See How It Works</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">1M+</span>
+                        <span class="stat-label">Active Users</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50M+</span>
+                        <span class="stat-label">Foods Analyzed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4.8</span>
+                        <span class="stat-label">App Rating</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/hero-image.svg" alt="NutriScan App Demo">
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="section-header">
+                <h2>Powerful Features</h2>
+                <p>Discover what makes NutriScan the smartest way to track your nutrition</p>
+            </div>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Snap & Analyze</h3>
+                    <p>Take a photo of your meal and get instant nutritional information with our advanced AI recognition.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Nutrition Tracking</h3>
+                    <p>Track calories, macros, vitamins, and minerals with detailed breakdowns and visual reports.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Smart Recommendations</h3>
+                    <p>Get personalized food suggestions based on your goals, preferences, and dietary restrictions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Recipe Analysis</h3>
+                    <p>Analyze homemade meals by entering ingredients and get complete nutritional profiles.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Three simple steps to transform your nutrition habits</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Take a Photo</h3>
+                        <p>Snap a picture of your meal using the NutriScan app or upload an existing photo.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="assets/step1.svg" alt="Take a photo of your food">
+                    </div>
+                </div>
+                <div class="step reverse">
+                    <div class="step-image">
+                        <img src="assets/step2.svg" alt="AI analyzes your food">
+                    </div>
+                    <div class="step-content">
+                        <h3>AI Analysis</h3>
+                        <p>Our advanced AI identifies food items and calculates nutritional content with high accuracy.</p>
+                    </div>
+                    <div class="step-number">2</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Get Insights</h3>
+                        <p>Review detailed nutrition information and receive personalized recommendations.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="assets/step3.svg" alt="Get nutrition insights">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="learn" class="learn">
+            <div class="section-header">
+                <h2>Expand Your Knowledge</h2>
+                <p>Bite-sized lessons to help you make smarter food choices.</p>
+            </div>
+            <div class="learn-cards-container">
+                <a href="glycemic-index.html" class="learn-card glycemic">
+                    <h3>Glycemic Index</h3>
+                    <div class="learn-card-content">
+                        <h4>Understanding Glycemic Index</h4>
+                        <p>Learn how different foods affect your blood sugar levels.</p>
+                    </div>
+                </a>
+                
+                <a href="diabetes-foods.html" class="learn-card diabetes">
+                    <h3>Diabetes Foods</h3>
+                    <div class="learn-card-content">
+                        <h4>Best Foods for Diabetes</h4>
+                        <p>Discover foods that help manage and prevent diabetes.</p>
+                    </div>
+                </a>
+                
+                <a href="ecoscore.html" class="learn-card ecoscore">
+                    <h3>EcoScore</h3>
+                    <div class="learn-card-content">
+                        <h4>EcoScore Explained</h4>
+                        <p>Make sustainable choices by understanding a food's environmental impact.</p>
+                    </div>
+                </a>
+                
+                <a href="nutrition-labels.html" class="learn-card labels">
+                    <h3>Reading Labels</h3>
+                    <div class="learn-card-content">
+                        <h4>How to Read Nutrition Labels</h4>
+                        <p>Decode complex labels and identify hidden sugars and fats.</p>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard" class="dashboard">
+            <div class="section-header">
+                <h2>Visualize Your Health Journey</h2>
+                <p>Our intuitive dashboard consolidates your data into actionable insights.</p>
+            </div>
+            <div class="dashboard-container">
+                <div class="dashboard-card">
+                    <h3>Daily Macro Intake</h3>
+                    <div class="pie-chart-container">
+                        <div class="pie-chart">
+                            <div class="pie-segment protein" style="--percentage: 40%;"></div>
+                            <div class="pie-segment carbs" style="--percentage: 30%;"></div>
+                            <div class="pie-segment fats" style="--percentage: 30%;"></div>
+                        </div>
+                    </div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <span class="legend-color protein"></span>
+                            <span class="legend-text">Protein 40%</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color carbs"></span>
+                            <span class="legend-text">Carbs 30%</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color fats"></span>
+                            <span class="legend-text">Fats 30%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dashboard-card">
+                    <h3>NutriScore Comparison</h3>
+                    <div class="bar-chart-container">
+                        <div class="bar-chart-item">
+                            <span class="food-label">Oat Cereal</span>
+                            <div class="bar-chart-bar">
+                                <div class="bar-fill good" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="bar-chart-item">
+                            <span class="food-label">White Bread</span>
+                            <div class="bar-chart-bar">
+                                <div class="bar-fill warning" style="width: 55%;"></div>
+                            </div>
+                        </div>
+                        <div class="bar-chart-item">
+                            <span class="food-label">Yogurt</span>
+                            <div class="bar-chart-bar">
+                                <div class="bar-fill good" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dashboard-container">
+                <div class="dashboard-card tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="tip-content">
+                        <h3>Personalized Tip</h3>
+                        <p>Based on your recent scans, try incorporating more fiber. Whole grains are a great start!</p>
+                    </div>
+                </div>
+                
+                <div class="dashboard-card">
+                    <h3>Sugar/Carb Risk</h3>
+                    <div class="risk-meter-container">
+                        <div class="risk-meter">
+                            <div class="risk-meter-fill" style="width: 65%;"></div>
+                        </div>
+                        <div class="risk-label">High Risk Zone</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Get answers to common questions about NutriScan</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How does the product analyze food from just a barcode?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>When you scan a barcode, our system fetches the nutrition facts from verified databases. Then, AI and ML models interpret the data, compute GI, NutriScore, and EcoScore, and convert raw numbers into meaningful health insights in seconds.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can it help people with diabetes or other conditions?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. The system flags high sugar or carbohydrate risks instantly, making it especially useful for diabetes management. It also adapts recommendations to your profile (age, health conditions, and preferences) for safer and more relevant guidance.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What makes this different from normal nutrition apps?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most apps just show calories and nutrients. Our product explains what those numbers mean for your health, gives a clear Good/OK/Bad label, and offers 5–6 practical tips you can use right away — plus an education module to help you learn.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is it available in local languages?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. All recommendations are delivered in English, Hindi, and Bengali — both as text and natural TTS (voice). This makes the product accessible to a wider audience, from urban shoppers to community health programs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do I need an internet connection to use it?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, the app works in both online and offline modes. You can scan and analyze foods offline using cached nutrition data and built-in AI rules, while the online mode ensures real-time updates, latest product info, and caregiver alerts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Nutrition?</h2>
+                <p>Join thousands of users who have improved their health with NutriScan.</p>
+                <a href="#" class="btn btn-primary btn-large">Get Started Free</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/logo.svg" alt="NutriScan Logo">
+                <span>NutriScan</span>
+                <p>Making nutrition simple and accessible for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#">Download App</a></li>
+                        <li><a href="#">Updates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Nutrition Guide</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Data Processing</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2025 NutriScan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Sign Up Modal -->
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Create Your Account</h2>
+            <p>Join NutriScan to start your health journey</p>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" placeholder="Enter your age" min="1" max="120" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+                <button type="submit" id="update-profile-btn" class="btn btn-primary btn-large" disabled>Update Profile</button>
+            </form>
+        </div>
+    </div>
+    <!-- Camera Modal -->
+    <div id="camera-modal" class="camera-modal">
+        <div class="camera-container">
+            <video id="camera-feed" class="camera-feed" autoplay playsinline></video>
+            <div class="camera-controls">
+                <div class="close-camera">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div id="scan-result" class="scan-result">
+                <p>Barcode detected: <span id="barcode-value"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include QuaggaJS for barcode scanning -->
+    <script src="https://cdn.jsdelivr.net/npm/@ericblade/quagga2/dist/quagga.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -233,8 +233,6 @@ Work On Progress (Comming Soon...)
 ---
 ## 👨‍💻 Our Team  
 
-We are a **5-member interdisciplinary team** combining AI, data, and design expertise to build **NutriScan** – an AI-powered nutrition intelligence system.  
-
 - 🚀 **Nakshatra Naskar** – *Project Lead & Full-Stack AI/ML Developer*  
   → Architected the **Android App**, built the **Flask backend**, and developed the **AI/ML engine** powering NutriScan.  
 

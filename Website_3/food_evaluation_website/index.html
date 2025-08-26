@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriScan AI - Smart Food Evaluation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        
+        .navbar {
+            background-color: #111;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+        }
+        
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover, .nav-links a.active {
+            color: #4CAF50;
+        }
+        
+        .hero {
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 0.5rem;
+            transition: all 0.3s;
+        }
+        
+        .primary-btn {
+            background-color: #4CAF50;
+            color: #000;
+        }
+        
+        .primary-btn:hover {
+            background-color: #3e8e41;
+            transform: scale(1.05);
+        }
+        
+        .secondary-btn {
+            border: 2px solid #4CAF50;
+            color: #fff;
+        }
+        
+        .secondary-btn:hover {
+            background-color: rgba(76, 175, 80, 0.1);
+        }
+        
+        .feature-preview {
+            padding: 4rem 0;
+            background-color: #111;
+        }
+        
+        .feature-preview h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .features-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            flex: 1;
+            min-width: 250px;
+            max-width: 350px;
+        }
+        
+        .feature-icon {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+        
+        .how-it-works {
+            padding: 4rem 0;
+        }
+        
+        .how-it-works h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .steps {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        
+        .step {
+            text-align: center;
+            padding: 1.5rem;
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #4CAF50;
+            color: #000;
+            border-radius: 50%;
+            line-height: 40px;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .step-arrow {
+            font-size: 2rem;
+            color: #4CAF50;
+            margin: 0 1rem;
+        }
+        
+        .cta-container {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        .testimonials-preview {
+            padding: 4rem 0;
+            background-color: #111;
+            text-align: center;
+        }
+        
+        .testimonial {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .quote {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        .author {
+            color: #4CAF50;
+        }
+        
+        footer {
+            background-color: #111;
+            padding: 2rem 0;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-section h3 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .footer-section a:hover {
+            color: #4CAF50;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .user-status {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        
+        #logoutBtn {
+            background-color: #4CAF50;
+            color: black;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 1rem 0;
+            }
+            
+            .nav-links {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .nav-links li {
+                margin: 0.5rem;
+            }
+            
+            .steps {
+                flex-direction: column;
+            }
+            
+            .step-arrow {
+                transform: rotate(90deg);
+                margin: 1rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">NutriScan AI</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="barcode.html">Barcode Scanner</a></li>
+                <li><a href="how-to-use.html">How to Use</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+            <div class="user-status">
+                <span id="welcomeMessage">Guest</span>
+                <button id="logoutBtn" style="display: none;">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Transform Your Food Choices with AI</h1>
+                <p>Scan any barcode for instant, trustworthy nutrition guidance tailored to your health needs</p>
+                <div class="hero-buttons">
+                    <a href="login.html" class="btn primary-btn">Get Started</a>
+                    <a href="how-to-use.html" class="btn secondary-btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Previews -->
+        <section class="feature-preview">
+            <div class="container">
+                <h2>Smart Food Evaluation at Your Fingertips</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Instant Analysis</h3>
+                        <p>Scan any barcode for immediate nutrient breakdown and health scores</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Personalized Guidance</h3>
+                        <p>Receive 5-6 actionable tips tailored to your age and health status</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔊</div>
+                        <h3>Multilingual Support</h3>
+                        <p>Access information in English, Hindi, and Bengali through text and voice</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-it-works">
+            <div class="container">
+                <h2>How It Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Scan Product</h3>
+                        <p>Use your camera to scan any food product barcode</p>
+                    </div>
+                    <div class="step-arrow">→</div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Get Analysis</h3>
+                        <p>View complete nutrition breakdown and health scores</p>
+                    </div>
+                    <div class="step-arrow">→</div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Receive Guidance</h3>
+                        <p>Get personalized recommendations and health tips</p>
+                    </div>
+                </div>
+                <div class="cta-container">
+                    <a href="barcode.html" class="btn primary-btn">Try Scanner Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Preview -->
+        <section class="testimonials-preview">
+            <div class="container">
+                <h2>What Our Users Say</h2>
+                <div class="testimonial">
+                    <div class="quote">"NutriScan AI has completely transformed how I manage my diabetes. The instant GI values and personalized recommendations are game-changers."</div>
+                    <div class="author">- Rajesh Kumar, Diabetes Patient</div>
+                </div>
+                <div class="cta-container">
+                    <a href="testimonials.html" class="btn secondary-btn">Read More Testimonials</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NutriScan AI</h3>
+                    <p>Transforming food choices through AI-powered nutrition guidance.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="barcode.html">Barcode Scanner</a></li>
+                        <li><a href="how-to-use.html">How to Use</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@nutriscanai.com</p>
+                    <p>Phone: +91 123 456 7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 NutriScan AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Check if user is logged in
+        window.addEventListener('DOMContentLoaded', function() {
+            const username = localStorage.getItem('username');
+            if (username) {
+                document.getElementById('welcomeMessage').textContent = 'Welcome ' + username;
+                document.getElementById('logoutBtn').style.display = 'inline-block';
+            }
+            
+            // Logout functionality
+            document.getElementById('logoutBtn').addEventListener('click', function() {
+                localStorage.removeItem('username');
+                window.location.reload();
+            });
+        });
+    </script>
+</body>
+</html>

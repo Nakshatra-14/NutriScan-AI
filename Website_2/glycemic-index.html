@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glycemic Index | NutriScan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .blog-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .blog-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .blog-content {
+            line-height: 1.8;
+        }
+        
+        .blog-section {
+            margin-bottom: 3rem;
+        }
+        
+        .blog-section h2 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .blog-section h3 {
+            margin: 1.5rem 0 1rem;
+            color: var(--text-color);
+        }
+        
+        .blog-image {
+            width: 100%;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+        }
+        
+        .gi-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .gi-category {
+            flex: 1;
+            min-width: 200px;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .high-gi {
+            background-color: rgba(255, 99, 71, 0.1);
+            border-left: 4px solid tomato;
+        }
+        
+        .medium-gi {
+            background-color: rgba(255, 165, 0, 0.1);
+            border-left: 4px solid orange;
+        }
+        
+        .low-gi {
+            background-color: rgba(46, 204, 113, 0.1);
+            border-left: 4px solid #2ecc71;
+        }
+        
+        .formula-box {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .formula {
+            font-family: monospace;
+            font-size: 1.1rem;
+            background: var(--bg-color-secondary);
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            overflow-x: auto;
+        }
+        
+        .tips-list li {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/logo.svg" alt="NutriScan Logo">
+                <span>NutriScan</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#how-it-works">How It Works</a></li>
+                <li><a href="index.html#learn" class="active">Learn</a></li>
+                <li><a href="index.html#dashboard">Dashboard</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#" class="btn btn-secondary">Log In</a>
+                <a href="#" class="btn btn-primary">Sign Up Free</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="blog-container">
+            <div class="blog-header">
+                <h1>Understanding the <span class="highlight">Glycemic</span> Index</h1>
+                <p class="blog-meta"><i class="fas fa-calendar-alt"></i> Published: August 21, 2025 | <i class="fas fa-user"></i> By Real Vision</p>
+            </div>
+            
+            <div class="blog-content">
+                <div class="blog-section">
+                    <p>The glycemic index (GI) is a valuable tool that helps us understand how different carbohydrate-containing foods affect our blood sugar levels. In this comprehensive guide, we'll explore what the glycemic index is, why it matters, and how you can use this knowledge to make healthier food choices.</p>
+                    
+                    <img src="assets/hero-image.svg" alt="Glycemic Index Visualization" class="blog-image">
+                </div>
+                
+                <div class="blog-section" id="what-is-gi">
+                    <h2>What is the Glycemic Index?</h2>
+                    <p>The Glycemic Index (GI) is a numerical scale from 0 to 100 that ranks carbohydrate-containing foods based on how quickly they raise blood glucose levels after consumption. This ranking system was developed in the early 1980s by Dr. David Jenkins and colleagues at the University of Toronto.</p>
+                    
+                    <p>The GI value of a food is determined by measuring how quickly the body converts the carbohydrates in that food into glucose, which then enters the bloodstream. Foods are ranked based on how they compare to a reference food, typically pure glucose (which has a GI value of 100).</p>
+                </div>
+                
+                <div class="blog-section" id="gi-categories">
+                    <h2>Glycemic Index Categories</h2>
+                    <p>Foods are classified into three categories based on their GI values:</p>
+                    
+                    <div class="gi-categories">
+                        <div class="gi-category high-gi">
+                            <h3>High GI (≥70)</h3>
+                            <p>Foods with a high GI are rapidly digested and absorbed, causing a quick spike in blood sugar levels.</p>
+                            <p><strong>Examples:</strong> White bread (~75), white rice, cornflakes, potatoes, watermelon</p>
+                        </div>
+                        
+                        <div class="gi-category medium-gi">
+                            <h3>Medium GI (56–69)</h3>
+                            <p>Medium GI foods cause a moderate rise in blood sugar levels.</p>
+                            <p><strong>Examples:</strong> Whole wheat bread, basmati rice, couscous, ripe bananas, honey</p>
+                        </div>
+                        
+                        <div class="gi-category low-gi">
+                            <h3>Low GI (≤55)</h3>
+                            <p>Low GI foods are digested more slowly, leading to a gradual rise in blood sugar.</p>
+                            <p><strong>Examples:</strong> Lentils (~32), chickpeas, most fruits and vegetables, yogurt, nuts</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-section" id="why-gi-matters">
+                    <h2>Why the Glycemic Index Matters</h2>
+                    <p>Understanding the glycemic index of foods can be beneficial for several reasons:</p>
+                    
+                    <h3>Blood Sugar Management</h3>
+                    <p>For people with diabetes or insulin resistance, choosing low GI foods can help maintain more stable blood sugar levels throughout the day. This can reduce the need for medication and help prevent complications associated with blood sugar spikes.</p>
+                    
+                    <h3>Weight Management</h3>
+                    <p>Low GI foods tend to keep you feeling fuller for longer periods, which may help reduce overall calorie intake and support weight management efforts. High GI foods can cause rapid spikes and drops in blood sugar, which may trigger hunger and cravings.</p>
+                    
+                    <h3>Energy Levels</h3>
+                    <p>Consuming low GI foods provides a steady release of energy, helping to maintain consistent energy levels throughout the day. This can be particularly beneficial for athletes and active individuals.</p>
+                    
+                    <h3>Heart Health</h3>
+                    <p>Some research suggests that a low GI diet may help improve cholesterol levels and reduce the risk of heart disease and type 2 diabetes.</p>
+                </div>
+                
+                <div class="blog-section" id="gi-calculation">
+                    <h2>How is Glycemic Index Calculated?</h2>
+                    <p>The glycemic index of a food is determined through clinical testing. However, for educational purposes, we can use a simplified formula that approximates GI values based on a food's sugar and carbohydrate content:</p>
+                    
+                    <div class="formula-box">
+                        <div class="formula">
+                            GI = min(100, max(0, N(55,15) + 10×sugar + 50×carbohydrate))
+                        </div>
+                        <p>Where:</p>
+                        <ul>
+                            <li>N(55,15) represents a normal distribution with mean 55 and standard deviation 15</li>
+                            <li>sugar is the sugar content of the food (as a decimal percentage)</li>
+                            <li>carbohydrate is the carbohydrate content of the food (as a decimal percentage)</li>
+                        </ul>
+                        <p>This formula ensures that the GI value falls between 0 and 100.</p>
+                    </div>
+                    
+                    <p>It's important to note that this is a simplified approximation. Actual GI values are determined through standardized clinical testing where volunteers consume a test food containing 50g of available carbohydrates, and their blood glucose response is measured over time.</p>
+                </div>
+                
+                <div class="blog-section" id="practical-tips">
+                    <h2>Practical Tips for Incorporating Low GI Foods</h2>
+                    <p>Here are some practical strategies to lower the glycemic impact of your diet:</p>
+                    
+                    <ul class="tips-list">
+                        <li><strong>Choose whole grains:</strong> Opt for whole grain bread, pasta, and cereals instead of their refined counterparts.</li>
+                        <li><strong>Add legumes to your meals:</strong> Beans, lentils, and chickpeas are excellent low-GI protein sources.</li>
+                        <li><strong>Eat fruits with their skin:</strong> The fiber in fruit skin helps slow down sugar absorption.</li>
+                        <li><strong>Balance your plate:</strong> Pair high GI foods with proteins or healthy fats to lower the overall GI of your meal.</li>
+                        <li><strong>Choose al dente pasta:</strong> Cooking pasta until it's firm (al dente) rather than soft results in a lower GI.</li>
+                        <li><strong>Include vinegar in salad dressings:</strong> Acidic foods like vinegar can help lower the GI of a meal.</li>
+                        <li><strong>Opt for steel-cut or rolled oats:</strong> These have a lower GI than instant oatmeal.</li>
+                        <li><strong>Incorporate nuts and seeds:</strong> These provide healthy fats and protein that help slow digestion.</li>
+                    </ul>
+                </div>
+                
+                <div class="blog-section" id="conclusion">
+                    <h2>Conclusion</h2>
+                    <p>The glycemic index is a valuable tool for understanding how different foods affect your blood sugar levels. By incorporating more low and medium GI foods into your diet, you can help maintain stable blood sugar levels, manage your weight, and improve your overall health.</p>
+                    
+                    <p>Remember that the GI is just one aspect of a healthy diet. It's also important to consider the overall nutritional value of foods, including their vitamin, mineral, and fiber content. A balanced diet that includes a variety of nutrient-dense foods is key to optimal health.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/logo.svg" alt="NutriScan Logo">
+                <span>NutriScan</span>
+                <p>Making nutrition simple and accessible for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="#">Download App</a></li>
+                        <li><a href="#">Updates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Nutrition Guide</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Data Processing</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2025 NutriScan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoScore | NutriScan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .blog-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .blog-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .blog-content {
+            line-height: 1.8;
+        }
+        
+        .blog-section {
+            margin-bottom: 3rem;
+        }
+        
+        .blog-section h2 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .blog-section h3 {
+            margin: 1.5rem 0 1rem;
+            color: var(--text-color);
+        }
+        
+        .blog-image {
+            width: 100%;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+        }
+        
+        .eco-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .eco-category {
+            flex: 1;
+            min-width: 200px;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .eco-a {
+            background-color: rgba(46, 204, 113, 0.1);
+            border-left: 4px solid #2ecc71;
+        }
+        
+        .eco-b {
+            background-color: rgba(46, 204, 113, 0.05);
+            border-left: 4px solid #27ae60;
+        }
+        
+        .eco-c {
+            background-color: rgba(241, 196, 15, 0.1);
+            border-left: 4px solid #f1c40f;
+        }
+        
+        .eco-d {
+            background-color: rgba(230, 126, 34, 0.1);
+            border-left: 4px solid #e67e22;
+        }
+        
+        .eco-e {
+            background-color: rgba(231, 76, 60, 0.1);
+            border-left: 4px solid #e74c3c;
+        }
+        
+        .formula-box {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .formula {
+            font-family: monospace;
+            font-size: 1.1rem;
+            background: var(--bg-color-secondary);
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            overflow-x: auto;
+        }
+        
+        .tips-list li {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/logo.svg" alt="NutriScan Logo">
+                <span>NutriScan</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#how-it-works">How It Works</a></li>
+                <li><a href="index.html#learn" class="active">Learn</a></li>
+                <li><a href="index.html#dashboard">Dashboard</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#" class="btn btn-secondary">Log In</a>
+                <a href="#" class="btn btn-primary">Sign Up Free</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="blog-container">
+            <div class="blog-header">
+                <h1>Understanding <span class="highlight">EcoScore</span></h1>
+                <p class="blog-meta"><i class="fas fa-calendar-alt"></i> Published: August 25, 2025 | <i class="fas fa-user"></i> By Real Vision</p>
+            </div>
+            
+            <div class="blog-content">
+                <div class="blog-section">
+                    <p>EcoScore is an innovative rating system designed to help consumers understand the environmental impact of food products. In this comprehensive guide, we'll explore what EcoScore is, how it's calculated, and how you can use this knowledge to make more sustainable food choices.</p>
+                    
+                    <img src="assets/hero-image.svg" alt="EcoScore Visualization" class="blog-image">
+                </div>
+                
+                <div class="blog-section" id="what-is-ecoscore">
+                    <h2>What is EcoScore?</h2>
+                    <p>EcoScore is a labeling system that rates food products on a scale from A to E based on their environmental impact, with A being the most environmentally friendly and E having the highest environmental impact. This system was developed in France and has been gaining traction across Europe as a way to promote sustainable consumption.</p>
+                    
+                    <p>The EcoScore takes into account various environmental factors throughout a product's life cycle, including:</p>
+                    <ul>
+                        <li>Carbon footprint (greenhouse gas emissions)</li>
+                        <li>Water usage</li>
+                        <li>Land use and biodiversity impact</li>
+                        <li>Resource depletion</li>
+                        <li>Packaging and waste</li>
+                        <li>Transportation distance</li>
+                        <li>Production methods (organic, conventional, etc.)</li>
+                    </ul>
+                </div>
+                
+                <div class="blog-section" id="ecoscore-categories">
+                    <h2>EcoScore Categories</h2>
+                    <p>Products are classified into five categories based on their environmental impact:</p>
+                    
+                    <div class="eco-categories">
+                        <div class="eco-category eco-a">
+                            <h3>A (Very Low Impact)</h3>
+                            <p>Products with minimal environmental impact, often locally produced, organic, and with minimal processing and packaging.</p>
+                            <p><strong>Examples:</strong> Local seasonal vegetables, bulk legumes, local apples</p>
+                        </div>
+                        
+                        <div class="eco-category eco-b">
+                            <h3>B (Low Impact)</h3>
+                            <p>Products with low environmental impact, typically with sustainable production methods.</p>
+                            <p><strong>Examples:</strong> Organic milk, sustainably caught local fish, plant-based milk alternatives</p>
+                        </div>
+                        
+                        <div class="eco-category eco-c">
+                            <h3>C (Moderate Impact)</h3>
+                            <p>Products with moderate environmental impact.</p>
+                            <p><strong>Examples:</strong> Conventional fruits and vegetables, eggs from free-range chickens, some dairy products</p>
+                        </div>
+                        
+                        <div class="eco-category eco-d">
+                            <h3>D (High Impact)</h3>
+                            <p>Products with high environmental impact.</p>
+                            <p><strong>Examples:</strong> Conventional meat products, processed foods with multiple ingredients, imported out-of-season produce</p>
+                        </div>
+                        
+                        <div class="eco-category eco-e">
+                            <h3>E (Very High Impact)</h3>
+                            <p>Products with very high environmental impact.</p>
+                            <p><strong>Examples:</strong> Beef from deforested areas, highly processed foods with palm oil, exotic fruits transported by air</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-section" id="why-ecoscore-matters">
+                    <h2>Why EcoScore Matters</h2>
+                    <p>Understanding the environmental impact of food products is important for several reasons:</p>
+                    
+                    <h3>Climate Change Mitigation</h3>
+                    <p>Food production accounts for approximately 26% of global greenhouse gas emissions. By choosing products with better EcoScores, consumers can help reduce their carbon footprint and contribute to climate change mitigation efforts.</p>
+                    
+                    <h3>Biodiversity Protection</h3>
+                    <p>Certain food production methods can lead to habitat destruction, soil degradation, and water pollution. EcoScore helps identify products that have less impact on biodiversity and natural ecosystems.</p>
+                    
+                    <h3>Resource Conservation</h3>
+                    <p>Food production requires significant resources, including water, land, and energy. Products with better EcoScores typically use these resources more efficiently.</p>
+                    
+                    <h3>Informed Consumer Choices</h3>
+                    <p>EcoScore empowers consumers to make more environmentally conscious food choices based on transparent and standardized information.</p>
+                </div>
+                
+                <div class="blog-section" id="ecoscore-calculation">
+                    <h2>How is EcoScore Calculated?</h2>
+                    <p>The EcoScore calculation is complex and takes into account multiple environmental indicators. However, a simplified version of the formula can be represented as:</p>
+                    
+                    <div class="formula-box">
+                        <div class="formula">
+                            EcoScore = 100 - (Environmental_Impact_Points + Bonus_Points - Penalty_Points)
+                        </div>
+                        <p>Where:</p>
+                        <ul>
+                            <li><strong>Environmental_Impact_Points</strong> are calculated based on Life Cycle Assessment (LCA) data, considering factors like carbon footprint, water usage, and land use</li>
+                            <li><strong>Bonus_Points</strong> are awarded for sustainable practices (organic certification, local production, etc.)</li>
+                            <li><strong>Penalty_Points</strong> are deducted for problematic aspects (endangered species, deforestation, excessive packaging, etc.)</li>
+                        </ul>
+                        <p>The final score is then converted to a letter grade:</p>
+                        <ul>
+                            <li>A: 80-100 points</li>
+                            <li>B: 60-79 points</li>
+                            <li>C: 40-59 points</li>
+                            <li>D: 20-39 points</li>
+                            <li>E: 0-19 points</li>
+                        </ul>
+                    </div>
+                    
+                    <p>This formula ensures that the EcoScore takes into account both the environmental impact of the product itself and additional factors that may increase or decrease its sustainability.</p>
+                </div>
+                
+                <div class="blog-section" id="practical-tips">
+                    <h2>Practical Tips for Making Eco-Friendly Food Choices</h2>
+                    <p>Here are some practical strategies to reduce the environmental impact of your diet:</p>
+                    
+                    <ul class="tips-list">
+                        <li><strong>Choose local and seasonal products:</strong> This reduces transportation emissions and supports local agriculture.</li>
+                        <li><strong>Reduce meat consumption:</strong> Animal products, especially red meat, generally have higher environmental impacts than plant-based alternatives.</li>
+                        <li><strong>Minimize food waste:</strong> Plan meals, store food properly, and use leftovers creatively to reduce waste.</li>
+                        <li><strong>Choose products with minimal packaging:</strong> Opt for bulk items or products with recyclable or biodegradable packaging.</li>
+                        <li><strong>Look for sustainability certifications:</strong> Labels like Organic, Rainforest Alliance, and MSC (Marine Stewardship Council) can help identify more sustainable options.</li>
+                        <li><strong>Grow your own food:</strong> Even a small garden or a few potted herbs can reduce your food's environmental footprint.</li>
+                        <li><strong>Support regenerative agriculture:</strong> Look for products from farms that practice regenerative methods that improve soil health and sequester carbon.</li>
+                        <li><strong>Choose whole foods:</strong> Less processed foods typically require less energy to produce and often have less packaging.</li>
+                    </ul>
+                </div>
+                
+                <div class="blog-section" id="conclusion">
+                    <h2>Conclusion</h2>
+                    <p>EcoScore is a valuable tool for understanding the environmental impact of food products. By incorporating more products with better EcoScores into your diet, you can help reduce your environmental footprint and contribute to a more sustainable food system.</p>
+                    
+                    <p>Remember that making sustainable food choices is just one aspect of an environmentally conscious lifestyle. Every small change matters, and by being mindful of the environmental impact of our food choices, we can collectively make a significant difference.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/logo.svg" alt="NutriScan Logo">
+                <span>NutriScan</span>
+                <p>Making nutrition simple and accessible for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="#">Download App</a></li>
+                        <li><a href="#">Updates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Nutrition Guide</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Data Processing</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2025 NutriScan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

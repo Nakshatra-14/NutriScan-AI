@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Foods | NutriScan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .blog-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .blog-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .blog-content {
+            line-height: 1.8;
+        }
+        
+        .blog-section {
+            margin-bottom: 3rem;
+        }
+        
+        .blog-section h2 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .blog-section h3 {
+            margin: 1.5rem 0 1rem;
+            color: var(--text-color);
+        }
+        
+        .blog-image {
+            width: 100%;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+        }
+        
+        .food-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .food-category {
+            flex: 1;
+            min-width: 200px;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .best-foods {
+            background-color: rgba(46, 204, 113, 0.1);
+            border-left: 4px solid #2ecc71;
+        }
+        
+        .moderate-foods {
+            background-color: rgba(241, 196, 15, 0.1);
+            border-left: 4px solid #f1c40f;
+        }
+        
+        .avoid-foods {
+            background-color: rgba(231, 76, 60, 0.1);
+            border-left: 4px solid #e74c3c;
+        }
+        
+        .formula-box {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .formula {
+            font-family: monospace;
+            font-size: 1.1rem;
+            background: var(--bg-color-secondary);
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            overflow-x: auto;
+        }
+        
+        .tips-list li {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/logo.svg" alt="NutriScan Logo">
+                <span>NutriScan</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#how-it-works">How It Works</a></li>
+                <li><a href="index.html#learn" class="active">Learn</a></li>
+                <li><a href="index.html#dashboard">Dashboard</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#" class="btn btn-secondary">Log In</a>
+                <a href="#" class="btn btn-primary">Sign Up Free</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="blog-container">
+            <div class="blog-header">
+                <h1>Best Foods for <span class="highlight">Diabetes</span> Management</h1>
+                <p class="blog-meta"><i class="fas fa-calendar-alt"></i> Published: August 23, 2025 | <i class="fas fa-user"></i> By Real Vision</p>
+            </div>
+            
+            <div class="blog-content">
+                <div class="blog-section">
+                    <p>Managing diabetes through diet is one of the most effective strategies for controlling blood sugar levels and preventing complications. In this comprehensive guide, we'll explore the best foods for diabetes management, foods to consume in moderation, and foods to avoid.</p>
+                    
+                    <img src="assets/hero-image.svg" alt="Diabetes-Friendly Foods" class="blog-image">
+                </div>
+                
+                <div class="blog-section" id="understanding-diabetes">
+                    <h2>Understanding Diabetes and Diet</h2>
+                    <p>Diabetes is a chronic condition that affects how your body processes blood sugar (glucose). For people with diabetes, managing blood glucose levels is crucial, and diet plays a central role in this management.</p>
+                    
+                    <p>There are two main types of diabetes:</p>
+                    <ul>
+                        <li><strong>Type 1 Diabetes:</strong> The body doesn't produce insulin, a hormone needed to allow glucose to enter cells to produce energy.</li>
+                        <li><strong>Type 2 Diabetes:</strong> The body either doesn't produce enough insulin or resists insulin's effects.</li>
+                    </ul>
+                    
+                    <p>While both types require careful attention to diet, the recommendations in this guide are particularly relevant for type 2 diabetes, which is often influenced by lifestyle factors including diet.</p>
+                </div>
+                
+                <div class="blog-section" id="food-categories">
+                    <h2>Diabetes Food Categories</h2>
+                    <p>Foods can be categorized based on their impact on blood sugar levels and overall health for people with diabetes:</p>
+                    
+                    <div class="food-categories">
+                        <div class="food-category best-foods">
+                            <h3>Best Foods</h3>
+                            <p>Foods that have minimal impact on blood sugar levels and provide essential nutrients.</p>
+                            <ul>
+                                <li>Non-starchy vegetables</li>
+                                <li>Leafy greens</li>
+                                <li>Berries</li>
+                                <li>Fatty fish</li>
+                                <li>Nuts and seeds</li>
+                                <li>Legumes</li>
+                                <li>Whole grains</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="food-category moderate-foods">
+                            <h3>Moderate Consumption</h3>
+                            <p>Foods that can be included in a diabetes diet but should be consumed in controlled portions.</p>
+                            <ul>
+                                <li>Starchy vegetables</li>
+                                <li>Whole fruits</li>
+                                <li>Dairy products</li>
+                                <li>Lean meats</li>
+                                <li>Whole grain bread and pasta</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="food-category avoid-foods">
+                            <h3>Foods to Limit/Avoid</h3>
+                            <p>Foods that can cause significant spikes in blood sugar or contribute to other health issues.</p>
+                            <ul>
+                                <li>Sugary beverages</li>
+                                <li>Refined carbohydrates</li>
+                                <li>Processed snacks</li>
+                                <li>Fried foods</li>
+                                <li>Full-fat dairy</li>
+                                <li>Alcohol (excessive)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-section" id="best-foods-detailed">
+                    <h2>Best Foods for Diabetes in Detail</h2>
+                    
+                    <h3>Non-Starchy Vegetables</h3>
+                    <p>Non-starchy vegetables are low in calories and carbohydrates but high in fiber and nutrients. They have minimal impact on blood sugar levels and can help with weight management.</p>
+                    <p><strong>Examples:</strong> Spinach, kale, broccoli, cauliflower, bell peppers, tomatoes, cucumber, zucchini, asparagus, green beans</p>
+                    
+                    <h3>Fatty Fish</h3>
+                    <p>Fatty fish is rich in omega-3 fatty acids, which can help reduce inflammation and improve heart health—important for people with diabetes who have an increased risk of heart disease.</p>
+                    <p><strong>Examples:</strong> Salmon, mackerel, sardines, trout, herring</p>
+                    
+                    <h3>Nuts and Seeds</h3>
+                    <p>Nuts and seeds are high in healthy fats, protein, and fiber, which can help regulate blood sugar levels and promote satiety.</p>
+                    <p><strong>Examples:</strong> Almonds, walnuts, chia seeds, flaxseeds, pumpkin seeds</p>
+                    
+                    <h3>Legumes</h3>
+                    <p>Legumes are high in fiber and protein, which can help slow digestion and prevent blood sugar spikes. They also provide essential nutrients and can help with weight management.</p>
+                    <p><strong>Examples:</strong> Lentils, chickpeas, black beans, kidney beans</p>
+                    
+                    <h3>Berries</h3>
+                    <p>Berries are lower in sugar compared to many other fruits and are rich in antioxidants and fiber.</p>
+                    <p><strong>Examples:</strong> Strawberries, blueberries, raspberries, blackberries</p>
+                </div>
+                
+                <div class="blog-section" id="glycemic-index">
+                    <h2>The Role of Glycemic Index in Diabetes Management</h2>
+                    <p>The Glycemic Index (GI) is a valuable tool for people with diabetes. It ranks carbohydrate-containing foods based on how quickly they raise blood glucose levels.</p>
+                    
+                    <div class="formula-box">
+                        <p>For diabetes management, it's generally recommended to focus on foods with a low to medium GI:</p>
+                        <ul>
+                            <li><strong>Low GI (≤55):</strong> Most non-starchy vegetables, most fruits, legumes, whole grains like barley and quinoa</li>
+                            <li><strong>Medium GI (56-69):</strong> Whole wheat products, brown rice, sweet potatoes</li>
+                            <li><strong>High GI (≥70):</strong> White bread, white rice, potatoes, many processed foods</li>
+                        </ul>
+                        <p>However, it's important to consider not just the GI of a food but also the glycemic load (GL), which takes into account both the GI and the amount of carbohydrates in a serving.</p>
+                    </div>
+                    
+                    <p>For more detailed information on the glycemic index, you can visit our <a href="glycemic-index.html">Glycemic Index Guide</a>.</p>
+                </div>
+                
+                <div class="blog-section" id="meal-planning">
+                    <h2>Meal Planning for Diabetes</h2>
+                    <p>Effective meal planning is essential for managing diabetes. Here are some key principles:</p>
+                    
+                    <h3>The Plate Method</h3>
+                    <p>A simple approach to meal planning is the plate method:</p>
+                    <ul>
+                        <li>Fill half your plate with non-starchy vegetables</li>
+                        <li>Fill one quarter with lean protein</li>
+                        <li>Fill one quarter with whole grains or starchy vegetables</li>
+                        <li>Add a small serving of fruit and/or dairy</li>
+                        <li>Use healthy fats in small amounts</li>
+                    </ul>
+                    
+                    <h3>Carbohydrate Counting</h3>
+                    <p>Carbohydrate counting involves tracking the grams of carbohydrates in each meal and snack. This method can be particularly useful for people who take insulin, as it allows for adjusting insulin doses based on carbohydrate intake.</p>
+                    
+                    <h3>Consistent Meal Timing</h3>
+                    <p>Eating meals at consistent times each day can help maintain stable blood sugar levels. Skipping meals can lead to fluctuations in blood glucose.</p>
+                </div>
+                
+                <div class="blog-section" id="practical-tips">
+                    <h2>Practical Tips for Diabetes-Friendly Eating</h2>
+                    <p>Here are some practical strategies to help manage diabetes through diet:</p>
+                    
+                    <ul class="tips-list">
+                        <li><strong>Practice portion control:</strong> Even healthy foods can raise blood sugar if consumed in large quantities.</li>
+                        <li><strong>Read food labels:</strong> Pay attention to total carbohydrates, fiber, and added sugars.</li>
+                        <li><strong>Choose whole foods:</strong> Minimize processed foods and focus on whole, unprocessed options.</li>
+                        <li><strong>Pair carbohydrates with protein and fat:</strong> This can help slow digestion and prevent blood sugar spikes.</li>
+                        <li><strong>Stay hydrated:</strong> Choose water over sugary beverages.</li>
+                        <li><strong>Plan ahead:</strong> Prepare meals and snacks in advance to avoid making unhealthy choices when hungry.</li>
+                        <li><strong>Work with professionals:</strong> Consult with a registered dietitian or certified diabetes educator for personalized advice.</li>
+                        <li><strong>Monitor blood sugar:</strong> Regular monitoring can help you understand how different foods affect your blood glucose levels.</li>
+                    </ul>
+                </div>
+                
+                <div class="blog-section" id="conclusion">
+                    <h2>Conclusion</h2>
+                    <p>Diet plays a crucial role in diabetes management. By focusing on nutrient-dense, low-glycemic foods and practicing mindful eating habits, people with diabetes can maintain better blood sugar control and reduce the risk of complications.</p>
+                    
+                    <p>Remember that individual responses to foods can vary, and what works for one person may not work for another. It's important to monitor blood sugar levels and work with healthcare professionals to develop a personalized eating plan.</p>
+                    
+                    <p>With the right knowledge and strategies, managing diabetes through diet can become a natural part of daily life, leading to better health outcomes and improved quality of life.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/logo.svg" alt="NutriScan Logo">
+                <span>NutriScan</span>
+                <p>Making nutrition simple and accessible for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="#">Download App</a></li>
+                        <li><a href="#">Updates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Nutrition Guide</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Data Processing</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2025 NutriScan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

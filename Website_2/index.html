@@ -431,6 +431,14 @@
             <div id="scan-result" class="scan-result">
                 <p>Barcode detected: <span id="barcode-value"></span></p>
             </div>
+            <div class="manual-scan">
+                <h4>Or enter barcode manually</h4>
+                <div class="manual-row">
+                    <input type="text" id="manual-barcode" placeholder="Enter barcode number" aria-label="Manual barcode input">
+                    <button id="manual-scan-btn" class="btn btn-primary">Scan</button>
+                </div>
+                <div id="manual-scan-status" class="manual-scan-status" aria-live="polite"></div>
+            </div>
         </div>
     </div>
 

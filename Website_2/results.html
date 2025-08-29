@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Scan Result • NutriScan</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="logo">
+				<img src="assets/logo.svg" alt="NutriScan Logo">
+				<span>NutriScan</span>
+			</div>
+			<ul class="nav-links">
+				<li><a href="/index.html">Home</a></li>
+			</ul>
+			<div class="nav-buttons">
+				<a href="/index.html" class="btn btn-secondary">Scan Another</a>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="features gradient-bg" style="padding-top: 40px;">
+			<div class="section-header">
+				<h2 id="product-title">Scan Result</h2>
+				<p id="product-subtitle">Nutrition, AI insights, GI and EcoScore</p>
+			</div>
+			<div class="dashboard-container fade-in" id="result-container">
+				<!-- Filled by results.js -->
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="footer-bottom">
+			<p>&copy; 2025 NutriScan. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="results.js"></script>
+	<script>
+	// Add page-level style enhancements without touching global CSS
+	(function(){
+		const style = document.createElement('style');
+		style.textContent = `
+			.gradient-bg { background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(16,185,129,0.08)); }
+			.fade-in { opacity: 0; transform: translateY(10px); animation: fadeInUp 500ms ease forwards; }
+			@keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+			.result-header { display: grid; grid-template-columns: 120px 1fr; gap: 20px; align-items: center; }
+			.result-photo { width: 120px; height: 120px; border-radius: 12px; object-fit: cover; box-shadow: 0 6px 16px rgba(0,0,0,0.15); }
+			.badge { display: inline-block; padding: 4px 10px; border-radius: 9999px; background: #111827; color: #fff; }
+			.rating-meter { position: relative; height: 14px; background: #e5e7eb; border-radius: 9999px; overflow: hidden; }
+			.rating-fill { position: absolute; height: 100%; left: 0; top: 0; width: 0; transition: width 600ms ease; }
+			.rating-A { background: linear-gradient(90deg, #10b981, #34d399); }
+			.rating-B { background: linear-gradient(90deg, #22c55e, #84cc16); }
+			.rating-C { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+			.rating-D { background: linear-gradient(90deg, #f97316, #fb7185); }
+			.rating-E { background: linear-gradient(90deg, #ef4444, #dc2626); }
+		`;
+		document.head.appendChild(style);
+	})();
+	</script>
+</body>
+</html>
+
+

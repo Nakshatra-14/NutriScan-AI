@@ -1,0 +1,21 @@
+{
+  "name": "nutriscan-website-2",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Basic backend for Website_2 with Express",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "nanoid": "^5.0.7",
+    "xlsx": "^0.18.5",
+    "node-fetch": "^3.3.2"
+  }
+}
+
+

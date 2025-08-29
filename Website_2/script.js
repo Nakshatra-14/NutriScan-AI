@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         // Process detected barcodes
-        Quagga.onDetected(function(result) {
+        Quagga.onDetected(async function(result) {
             if (result && result.codeResult && result.codeResult.code) {
                 const code = result.codeResult.code;
                 console.log("Barcode detected: ", code);
@@ -155,12 +155,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 barcodeValue.textContent = code;
                 scanResult.classList.add('show');
                 
-                // You can add additional functionality here, such as:
-                // - Looking up product information based on the barcode
-                // - Adding the scanned item to the user's food log
-                // - Displaying nutritional information
-                
-                // For demo purposes, we'll just show the barcode for 3 seconds
+                // Lookup product information on backend (enhanced scan)
+                try {
+                    const resp = await fetch(`/api/scan?barcode=${encodeURIComponent(code)}`);
+                    if (resp.ok) {
+                        const result = await resp.json();
+                        try {
+                            sessionStorage.setItem('lastScan', JSON.stringify(result));
+                        } catch {}
+                        window.location.href = 'results.html';
+                    } else {
+                        console.log('No product found for barcode');
+                    }
+                } catch (e) {
+                    console.error('Product lookup failed', e);
+                }
+
+                // Hide the scan result after a short delay
                 setTimeout(function() {
                     scanResult.classList.remove('show');
                 }, 3000);
@@ -218,7 +229,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Handle form submission
-    signupForm.addEventListener('submit', function(e) {
+    signupForm.addEventListener('submit', async function(e) {
         e.preventDefault();
         
         // Get form data
@@ -229,14 +240,23 @@ document.addEventListener('DOMContentLoaded', function() {
             email: document.getElementById('email').value
         };
         
-        // Store user data in localStorage (simulating database storage)
-        localStorage.setItem('userData', JSON.stringify(formData));
-        
-        // Close modal
-        signupModal.classList.remove('show');
-        
-        // Update greeting with time-based message
-        updateGreeting();
+        try {
+            const resp = await fetch('/api/users', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+            if (!resp.ok) {
+                const err = await resp.json().catch(() => ({}));
+                throw new Error(err.error || 'Failed to save user');
+            }
+            const saved = await resp.json();
+            localStorage.setItem('userData', JSON.stringify({ name: saved.name }));
+            signupModal.classList.remove('show');
+            updateGreeting();
+        } catch (err) {
+            alert(err.message || 'Something went wrong.');
+        }
     });
     
     // Check if user data exists and update greeting
@@ -551,4 +571,34 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
     document.head.appendChild(style);
+    
+    // Manual barcode input handling
+    const manualInput = document.getElementById('manual-barcode');
+    const manualBtn = document.getElementById('manual-scan-btn');
+    const manualStatus = document.getElementById('manual-scan-status');
+    if (manualBtn && manualInput) {
+        manualBtn.addEventListener('click', async () => {
+            const code = manualInput.value.trim();
+            if (!code) {
+                manualStatus.textContent = 'Please enter a barcode.';
+                return;
+            }
+            manualStatus.textContent = 'Scanning...';
+            try {
+                const resp = await fetch(`/api/scan?barcode=${encodeURIComponent(code)}`);
+                if (!resp.ok) {
+                    const err = await resp.json().catch(() => ({}));
+                    manualStatus.textContent = err.error ? `Error: ${err.error}` : 'No product found or error occurred.';
+                    return;
+                }
+                const result = await resp.json();
+                try {
+                    sessionStorage.setItem('lastScan', JSON.stringify(result));
+                } catch {}
+                window.location.href = 'results.html';
+            } catch (e) {
+                manualStatus.textContent = 'Network error. Please try again.';
+            }
+        });
+    }
 });

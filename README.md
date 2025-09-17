@@ -5,7 +5,6 @@
   <img src="https://contrib.rocks/image?repo=nakshatra-14/nutriscan-ai" />
 </a>
 
-Made with [contrib.rocks](https://contrib.rocks).
 <div align="center">
 
 ![NutriScan Logo](https://i.ibb.co/twRSFh5j/Nutri-Scan-Banner-low.jpg)

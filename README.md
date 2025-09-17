@@ -5,7 +5,7 @@
   <tr>
     <td align="center">
       <a href="https://github.com/nakshatra-14">
-        <img src="https://avatars.githubusercontent.com/u/89396517?v=4" width="100px;" alt="Nakshatra Naskar"/>
+        <img src="https://avatars.githubusercontent.com/u/87998363?v=4" width="100px;" alt="Nakshatra Naskar"/>
         <br />
         <sub><b>Nakshatra Naskar</b></sub>
       </a>
@@ -41,7 +41,7 @@
     </td>
      <td align="center">
       <a href="https://github.com/Pratyay-Roy">
-        <img src="https://avatars.githubusercontent.com/u/89396517?v=4" width="100px;" alt="Pratyay Roy"/>
+        <img src="https://avatars.githubusercontent.com/u/205917743?v=4" width="100px;" alt="Pratyay Roy"/>
         <br />
         <sub><b>Pratyay Roy</b></sub>
       </a>

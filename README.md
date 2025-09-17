@@ -1,10 +1,55 @@
 <!-- # 🍏 NutriScan AI — Your Intelligent Food Evaluator   -->
-## 👨‍💻 Contributors
+## 👨‍💻 Our Team
 
-<a href="https://github.com/nakshatra-14/nutriscan-ai/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=nakshatra-14/nutriscan-ai" />
-</a>
-
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/nakshatra-14">
+        <img src="https://avatars.githubusercontent.com/u/89396517?v=4" width="100px;" alt="Nakshatra Naskar"/>
+        <br />
+        <sub><b>Nakshatra Naskar</b></sub>
+      </a>
+      <br />
+      <sub>Project Lead & Full-Stack AI/ML Developer</sub>
+    </td>
+    <td align="center">
+      <a href="[URL_to_Ananya_Laha_Profile]">
+        <img src="[URL_to_Ananya_Laha_Logo]" width="100px;" alt="Ananya Laha"/>
+        <br />
+        <sub><b>Ananya Laha</b></sub>
+      </a>
+      <br />
+      <sub>UI/UX Designer</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/kunaldutta14">
+        <img src="https://avatars.githubusercontent.com/u/106682859?v=4" width="100px;" alt="Kunal Dutta"/>
+        <br />
+        <sub><b>Kunal Dutta</b></sub>
+      </a>
+      <br />
+      <sub>Data Scientist</sub>
+    </td>
+     <td align="center">
+      <a href="https://github.com/ankit-paul-2002">
+        <img src="https://avatars.githubusercontent.com/u/96469248?v=4" width="100px;" alt="Ankit Paul"/>
+        <br />
+        <sub><b>Ankit Paul</b></sub>
+      </a>
+      <br />
+      <sub>Frontend Developer</sub>
+    </td>
+     <td align="center">
+      <a href="https://github.com/Pratyay-Roy">
+        <img src="https://avatars.githubusercontent.com/u/89396517?v=4" width="100px;" alt="Pratyay Roy"/>
+        <br />
+        <sub><b>Pratyay Roy</b></sub>
+      </a>
+      <br />
+      <sub>Data Engineer</sub>
+    </td>
+  </tr>
+</table>
 <div align="center">
 
 ![NutriScan Logo](https://i.ibb.co/twRSFh5j/Nutri-Scan-Banner-low.jpg)

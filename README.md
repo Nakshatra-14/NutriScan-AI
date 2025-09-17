@@ -14,7 +14,7 @@
     </td>
     <td align="center">
       <a href="[URL_to_Ananya_Laha_Profile]">
-        <img src="[URL_to_Ananya_Laha_Logo]" width="100px;" alt="Ananya Laha"/>
+        <img src="https://toppng.com/uploads/preview/github-logo-png-download-11659780035ovo4tgsfgr.png" width="100px;" alt="Ananya Laha"/>
         <br />
         <sub><b>Ananya Laha</b></sub>
       </a>

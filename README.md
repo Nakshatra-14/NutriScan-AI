@@ -1,5 +1,11 @@
 <!-- # 🍏 NutriScan AI — Your Intelligent Food Evaluator   -->
+## 👨‍💻 Contributors
 
+<a href="https://github.com/nakshatra-14/nutriscan-ai/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=nakshatra-14/nutriscan-ai" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
 <div align="center">
 
 ![NutriScan Logo](https://i.ibb.co/twRSFh5j/Nutri-Scan-Banner-low.jpg)

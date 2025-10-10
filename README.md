@@ -86,7 +86,7 @@ Pick your platform below and get started in just one click 👇
 
 ### 🌐 Web App  
 
-[![Launch Web App](https://img.shields.io/badge/🚀_Launch-Web_App-blue?style=for-the-badge&logo=google-chrome)](https://nutri-scan-ai-azure.vercel.app/)  (Working)<br>
+[![Launch Web App](https://img.shields.io/badge/🚀_Launch-Web_App-blue?style=for-the-badge&logo=google-chrome)](https://nutri-scan-ai-wheat.vercel.app/)  (Working)<br>
 [![Launch Web 2 App](https://img.shields.io/badge/🚀_Launch-Web_App_2-blue?style=for-the-badge&logo=google-chrome)](https://nutri-scan-ai-kunal.vercel.app/)  (Working)<br>
 [![View Website Code](https://img.shields.io/badge/💻_View-Website_Code-lightgrey?style=for-the-badge&logo=react)](Website/my-app)  (Working)<br>
 

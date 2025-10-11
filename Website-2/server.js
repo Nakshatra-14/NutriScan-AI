@@ -292,13 +292,11 @@ function buildInsights(n, gi, eco, rating) {
 // Serve static site
 app.use(express.static(__dirname));
 
-// Fallback to index for top-level pages
+// Serve the homepage as default
 app.get(['/', '/index.html'], (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'homepage.html'));
 });
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
-
-

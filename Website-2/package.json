@@ -1,9 +1,9 @@
 {
-  "name": "nutriscan-website-2",
+  "name": "foodsense-ai-website",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Basic backend for Website_2 with Express",
+  "description": "FoodSense AI - Smart Nutrition Analysis Website",
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js"
@@ -17,5 +17,3 @@
     "node-fetch": "^3.3.2"
   }
 }
-
-

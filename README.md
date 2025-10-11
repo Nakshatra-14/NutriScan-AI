@@ -1,12 +1,62 @@
 <!-- # 🍏 NutriScan AI — Your Intelligent Food Evaluator   -->
+## 👨‍💻 Our Team
 
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/nakshatra-14">
+        <img src="https://avatars.githubusercontent.com/u/87998363?v=4" width="100px;" alt="Nakshatra Naskar"/>
+        <br />
+        <sub><b>Nakshatra Naskar</b></sub>
+      </a>
+      <br />
+      <sub>Project Lead & Full-Stack AI/ML Developer</sub>
+    </td>
+    <td align="center">
+      <a href="[URL_to_Ananya_Laha_Profile]">
+        <img src="https://toppng.com/uploads/preview/github-logo-png-download-11659780035ovo4tgsfgr.png" width="100px;" alt="Ananya Laha"/>
+        <br />
+        <sub><b>Ananya Laha</b></sub>
+      </a>
+      <br />
+      <sub>UI/UX Designer</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/kunaldutta14">
+        <img src="https://avatars.githubusercontent.com/u/106682859?v=4" width="100px;" alt="Kunal Dutta"/>
+        <br />
+        <sub><b>Kunal Dutta</b></sub>
+      </a>
+      <br />
+      <sub>Data Scientist</sub>
+    </td>
+     <td align="center">
+      <a href="https://github.com/ankit-paul-2002">
+        <img src="https://avatars.githubusercontent.com/u/96469248?v=4" width="100px;" alt="Ankit Paul"/>
+        <br />
+        <sub><b>Ankit Paul</b></sub>
+      </a>
+      <br />
+      <sub>Frontend Developer</sub>
+    </td>
+     <td align="center">
+      <a href="https://github.com/Pratyay-Roy">
+        <img src="https://avatars.githubusercontent.com/u/205917743?v=4" width="100px;" alt="Pratyay Roy"/>
+        <br />
+        <sub><b>Pratyay Roy</b></sub>
+      </a>
+      <br />
+      <sub>Data Engineer</sub>
+    </td>
+  </tr>
+</table>
 <div align="center">
 
 ![NutriScan Logo](https://i.ibb.co/twRSFh5j/Nutri-Scan-Banner-low.jpg)
 
 <!-- ![Hackathon Badge](https://img.shields.io/badge/Hackathon-Ready-brightgreen) 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg) 
-![Version](https://img.shields.io/badge/Version-1.0.0-orange) -->
+![Version](https://img.shields.io/badge/Version-1.0.0-orange) --> 
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00FF7F&center=true&vCenter=true&width=650&lines=Powered+by+a+proprietary+nutrition+database.;Analyzed+by+a+custom-built+AI%2FML+Engine.+%F0%9F%A7%A0;We+don't+just+show+numbers...;We+generate+dynamic%2C+sentence-based+insights.;Listen+to+your+results+with+natural+TTS.+%F0%9F%94%8A;All+on+a+clean+UI+for+Mobile+%F0%9F%93%B1+and+Web+%F0%9F%8C%90." alt="Typing SVG" /></a>
 </div>
@@ -36,7 +86,7 @@ Pick your platform below and get started in just one click 👇
 
 ### 🌐 Web App  
 
-[![Launch Web App](https://img.shields.io/badge/🚀_Launch-Web_App-blue?style=for-the-badge&logo=google-chrome)](https://nutri-scan-ai-azure.vercel.app/)  (Working)<br>
+[![Launch Web App](https://img.shields.io/badge/🚀_Launch-Web_App-blue?style=for-the-badge&logo=google-chrome)](https://nutri-scan-ai-wheat.vercel.app/)  (Working)<br>
 [![Launch Web 2 App](https://img.shields.io/badge/🚀_Launch-Web_App_2-blue?style=for-the-badge&logo=google-chrome)](https://nutri-scan-ai-kunal.vercel.app/)  (Working)<br>
 [![View Website Code](https://img.shields.io/badge/💻_View-Website_Code-lightgrey?style=for-the-badge&logo=react)](Website/my-app)  (Working)<br>
 

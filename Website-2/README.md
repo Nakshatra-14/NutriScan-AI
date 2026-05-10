@@ -1,6 +1,6 @@
-# FoodSense AI Website
+# NutriScan AI Website
 
-A complete FoodSense AI landing page with backend functionality for nutrition analysis.
+A complete NutriScan AI landing page with backend functionality for nutrition analysis.
 
 ## Setup
 
@@ -14,7 +14,7 @@ A complete FoodSense AI landing page with backend functionality for nutrition an
 
 ## Features
 
-- **Modern Landing Page**: Clean FoodSense AI design with mobile mockup
+- **Modern Landing Page**: Clean NutriScan AI design with mobile mockup
 - **User Registration**: Sign up with name, age, phone, email
 - **Barcode Scanning**: Scan products for nutrition analysis
 - **AI Insights**: Get personalized recommendations

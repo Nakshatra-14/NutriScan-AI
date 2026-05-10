@@ -1,8 +1,8 @@
 (function () {
     'use strict';
 
-    const THEME_KEY = 'foodsense-theme';
-    const USER_KEY = 'foodsense-user';
+    const THEME_KEY = 'nutriscan-ai-theme';
+    const USER_KEY = 'nutriscan-ai-user';
 
     const html = document.documentElement;
 
@@ -146,7 +146,7 @@
             showAuthMessage('form-signin', 'Please enter email and password.', 'error');
             return;
         }
-        const usersRaw = localStorage.getItem('foodsense-users');
+        const usersRaw = localStorage.getItem('nutriscan-ai-users');
         let users = [];
         try {
             users = usersRaw ? JSON.parse(usersRaw) : [];
@@ -187,7 +187,7 @@
         }
         let users = [];
         try {
-            const raw = localStorage.getItem('foodsense-users');
+            const raw = localStorage.getItem('nutriscan-ai-users');
             users = raw ? JSON.parse(raw) : [];
         } catch {
             users = [];
@@ -198,7 +198,7 @@
             return;
         }
         users.push({ name, email, password });
-        localStorage.setItem('foodsense-users', JSON.stringify(users));
+        localStorage.setItem('nutriscan-ai-users', JSON.stringify(users));
         setUserSession({ name, email });
         showAuthMessage('form-signup', 'Account created. You are signed in.', 'success');
         setTimeout(() => closeAuthModal(), 600);
@@ -209,6 +209,52 @@
         if (el) {
             el.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
+    }
+
+    const NAV_SECTION_IDS = ['features', 'how-it-works', 'benefits'];
+
+    function getHeaderOffset() {
+        const header = document.querySelector('.header');
+        return header ? header.offsetHeight : 88;
+    }
+
+    function updateActiveNavFromScroll() {
+        const line = window.scrollY + getHeaderOffset() + 16;
+        let activeId = '';
+        for (let i = 0; i < NAV_SECTION_IDS.length; i++) {
+            const id = NAV_SECTION_IDS[i];
+            const el = document.getElementById(id);
+            if (el && line >= el.offsetTop) {
+                activeId = id;
+            }
+        }
+        const first = document.getElementById(NAV_SECTION_IDS[0]);
+        if (first && line < first.offsetTop) {
+            activeId = '';
+        }
+
+        document.querySelectorAll('.nav-links a[data-scroll-target]').forEach((a) => {
+            const raw = a.getAttribute('data-scroll-target');
+            const sid = raw && raw.startsWith('#') ? raw.slice(1) : '';
+            a.classList.toggle('active', sid === activeId && activeId !== '');
+        });
+    }
+
+    let scrollSpyTicking = false;
+    function onScrollOrResizeForNav() {
+        if (!scrollSpyTicking) {
+            window.requestAnimationFrame(() => {
+                updateActiveNavFromScroll();
+                scrollSpyTicking = false;
+            });
+            scrollSpyTicking = true;
+        }
+    }
+
+    function initNavScrollSpy() {
+        updateActiveNavFromScroll();
+        window.addEventListener('scroll', onScrollOrResizeForNav, { passive: true });
+        window.addEventListener('resize', updateActiveNavFromScroll);
     }
 
     function bindNavScroll() {
@@ -288,5 +334,6 @@
     initTheme();
     bindNavScroll();
     bindButtons();
+    initNavScrollSpy();
     updateUserUi();
 })();
